@@ -36,7 +36,8 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-50 flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10">
+    <nav className="sticky z-50 m-auto flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10 w-full sm:w-5/6
+xl:w-3/4 2xl:w-3/5">
       <Link href="/">
         <Image
           src={RomsLogo}
@@ -48,12 +49,12 @@ export default function Nav() {
       </Link>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="lg:hidden p-2 rounded-m transition-all"
+        className="xl:hidden p-2 rounded-m transition-all"
       >
         <IoMenu className="h-10 w-10" />
       </button>
       <ul
-        className={`lg:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-solid p-6 sm:p-20 sm:text-lg transition-all  ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-solid p-6 sm:p-20 sm:text-lg transition-all  ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -82,7 +83,7 @@ export default function Nav() {
         ))}
       </ul>
 
-      <ul className="hidden lg:flex gap-2">
+      <ul className="hidden xl:flex gap-2">
         {navLinks.map((link, index) => (
           <li key={index} className="relative flex items-center">
             <Link
