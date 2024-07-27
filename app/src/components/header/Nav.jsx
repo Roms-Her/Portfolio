@@ -36,8 +36,10 @@ export default function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-50 m-auto flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10 w-full sm:w-5/6
-xl:w-3/4 2xl:w-3/5">
+    <nav
+      className="sticky z-50 m-auto flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10 w-full sm:w-5/6
+xl:w-3/4 2xl:w-3/5"
+    >
       <Link href="/">
         <Image
           src={RomsLogo}
@@ -66,10 +68,7 @@ xl:w-3/4 2xl:w-3/5">
         </button>
 
         {navLinks.map((link, index) => (
-          <li
-            key={index}
-            className="relative flex flex-col w-full"
-          >
+          <li key={index} className="relative flex flex-col w-full">
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}

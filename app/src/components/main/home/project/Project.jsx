@@ -50,7 +50,7 @@ export default function Project() {
         {projects.map((project, index) => (
           <div
             v-motion-pop-visible-once
-            class="card border border-white backdrop-blur-xl w-2/5 max-h-80 small:w-full rounded-3xl"
+            class="card border border-white backdrop-blur-xl bg-[#d6e1ff1a] w-2/5 max-h-80 small:w-full rounded-3xl"
             key={index}
           >
             <div class="card-body items-center text-center md:h-56">
