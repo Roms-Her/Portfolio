@@ -1,3 +1,4 @@
+import LinkButton from "../../LinkButton"
 export default function Welcome() {
 
 
@@ -9,9 +10,9 @@ const links = [
 ]
 
   return (
-    <section className="flex flex-col sm:items-center text-accessible">
+    <section className="flex flex-col items-center text-accessible">
 
-    <div v-motion-slide-visible-once-left className="flex p-8 flex-col w-full sm:w-5/6  md:mb-10 lg:flex-row-reverse lg:mb-14 xl:w-3/4 2xl:w-3/5">
+    <div v-motion-slide-visible-once-left className="flex p-8 flex-col w-full lg:w-5/6 2xl:w-4/6  md:mb-10 lg:flex-row-reverse lg:mb-14">
         <div className="portrait flex w-40 h-40 bg-card bg-opacity-30  rounded-full justify-center mb-8 m-auto md:mb-12 lg:m-auto lg:w-60 lg:h-60 xl:w-64 xl:h-64 ">
         </div>
         <div className="md:pr-8">
@@ -23,9 +24,7 @@ const links = [
 
                 {links.map((link, index) => (
                 <li className="flex items-center justify-center" key={index}>
-                    <a href={link.url}
-                        className=" bg-solid px-6 py-3 rounded-xl uppercase border border-solid tracking-widest font-medium text-sm hover:bg-accessible hover:text-backgroundColor hover:shadow-xl transition-all ease-out duration-200"
-                        target="blank">{link.name}</a>
+                    <LinkButton name={link.name} href={link.url}></LinkButton>
                 </li>
                 ))}
 

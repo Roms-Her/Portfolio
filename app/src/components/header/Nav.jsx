@@ -37,8 +37,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="sticky z-50 m-auto flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10 w-full sm:w-5/6
-xl:w-3/4 2xl:w-3/5"
+      className="m-auto flex items-center justify-between gap-10 w-full p-6 lg:w-5/6 2xl:w-4/6 mb-10"
     >
       <Link href="/">
         <Image
@@ -87,7 +86,7 @@ xl:w-3/4 2xl:w-3/5"
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-6 gap-4 hover:text-solid transition uppercase"
+              className="flex items-center py-2 px-6 gap-4 hover:text-orange-500 transition uppercase"
             >
               {link.title}
             </Link>

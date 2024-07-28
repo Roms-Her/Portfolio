@@ -4,5 +4,6 @@
 
 body {
   color: #f1f4fd ;
-  background-color: rgb(106, 106, 106)
+  /* background-color: rgb(5, 7, 123) */
+  background: linear-gradient(90deg, rgba(5,7,123,1) 0%, rgb(34, 75, 187) 100%);
 }

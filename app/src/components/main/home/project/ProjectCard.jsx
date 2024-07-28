@@ -30,7 +30,7 @@ export default function ProjectCard({project, setModalVisible}) {
 
         <div className="flex flex-col items-center p-8 overflow-y-auto h-full">
           <div className="flex flex-col gap-4 sm:w-3/4">
-            <h3 className="text-center mb-4 font-bold text-gray-600">name</h3>
+            <h3 className="text-center mb-4 font-bold text-gray-600">{project.name}</h3>
             <p className="text-center">{project.text}</p>
             <p className="text-center mb-4">{project.text2}</p>
           </div>
