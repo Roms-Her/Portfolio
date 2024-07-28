@@ -49,15 +49,15 @@ export default function Project() {
       <div class="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row  justify-center">
         {projects.map((project, index) => (
           <div
-            class="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
+            class="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
             key={index}
           >
             <div class="flex flex-col gap-6 items-center justify-between">
-              <h2 class="text-center md:text-xl uppercase">{project.name}</h2>
-              <p class="md:text-base text-center">{project.bio}</p>
+              <h2 class="text-center font-bold text-lg md:text-xl uppercase">{project.name}</h2>
+              <p class="text-sm md:text-base text-center">{project.bio}</p>
               <div class="">
                 <button
-                  class="bg-solid px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
+                  class="bg-solid px-4 py-2 rounded-xl  font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
                   onClick={() => {
                     setModalVisible(true), setSelectedProject(project);
                   }}

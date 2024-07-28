@@ -125,7 +125,7 @@ export default function Skills() {
       id="skills"
       class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
     >
-      <div class="backdrop-blur-xl bg-[#d6e0ff40] flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10">
+      <div class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10">
         <h2 class="font-bold mb-6 uppercase text-2xl">Hards Skills</h2>
         <div class="flex mb-4 w-full justify-center">
           <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
@@ -138,7 +138,7 @@ export default function Skills() {
         </div>
       </div>
 
-      <div class="backdrop-blur-xl bg-[#d6e0ff40] flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
+      <div class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
         <h2 class="font-bold mb-6 uppercase text-2xl">Softs Skills</h2>
 
         <div class="flex mb-4 w-full justify-center">

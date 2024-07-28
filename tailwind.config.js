@@ -14,17 +14,21 @@ module.exports = {
         backgroundInfo: "#6c22c3b3",
       },
 
-      fontSize: {
-        sm: "0.8em",
-        base: "1em0",
-        base2: "1.1em",
-        xl: "1.2em",
-        '2xl': "1.5em",
-        '3xl': "1.8em",
-        '35xl': "2em",
-        '4xl': "2.5em",
-        max: "3em"
+      backgroundImage: {
+        'roms': "url('/roms.png')",
       },
+
+      // fontSize: {
+      //   sm: "0.8em",
+      //   base: "1em0",
+      //   base2: "1.1em",
+      //   xl: "1.2em",
+      //   '2xl': "1.5em",
+      //   '3xl': "1.8em",
+      //   '35xl': "2em",
+      //   '4xl': "2.5em",
+      //   max: "3em"
+      // },
     },
   },
   plugins: [require("daisyui")],

@@ -37,7 +37,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="m-auto flex items-center justify-between gap-10 w-full p-6 lg:w-5/6 2xl:w-4/6 mb-10"
+      className="m-auto flex items-center justify-between gap-10 w-full p-6 lg:w-5/6 2xl:w-4/6 md:mb-10"
     >
       <Link href="/">
         <Image
@@ -55,7 +55,7 @@ export default function Nav() {
         <IoMenu className="h-10 w-10" />
       </button>
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-solid p-6 sm:p-20 sm:text-lg transition-all  ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-[#224bbb] p-12 sm:p-20 text-xl transition-all  ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
