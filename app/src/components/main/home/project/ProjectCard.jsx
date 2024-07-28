@@ -11,7 +11,7 @@ export default function ProjectCard({ project, setModalVisible }) {
       >
 
         <button
-          className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-backgroundColorBlack"
+          className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-solid hover:text-orange-500 transition-all"
           onClick={() => setModalVisible(false)}
         >
           <IoIosCloseCircle className="text-5xl" />
