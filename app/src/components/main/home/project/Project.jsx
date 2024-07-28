@@ -1,4 +1,5 @@
 "use client";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 export default function Project() {
@@ -44,20 +45,27 @@ export default function Project() {
   return (
     <section
       id="project-page"
-      class="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14 text-accessible"
+      className="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14 text-accessible"
     >
-      <div class="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row  justify-center">
+      <div className="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row  justify-center">
         {projects.map((project, index) => (
-          <div
-            class="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
+          <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.5,
+            delay: 0,
+            ease: [0, 0.71, 0.2, 1.01]
+          }}
+            className="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
             key={index}
           >
-            <div class="flex flex-col gap-6 items-center justify-between">
-              <h2 class="text-center font-bold text-lg md:text-xl uppercase">{project.name}</h2>
-              <p class="text-sm md:text-base text-center">{project.bio}</p>
-              <div class="">
+            <div className="flex flex-col gap-6 items-center justify-between">
+              <h2 className="text-center font-bold text-lg md:text-xl uppercase">{project.name}</h2>
+              <p className="text-sm md:text-base text-center">{project.bio}</p>
+              <div className="">
                 <button
-                  class="bg-solid px-4 py-2 rounded-xl  font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
+                  className="bg-solid px-4 py-2 rounded-xl  font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
                   onClick={() => {
                     setModalVisible(true), setSelectedProject(project);
                   }}
@@ -66,7 +74,7 @@ export default function Project() {
                 </button>
               </div>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       {modalVisible && selectedProject && (

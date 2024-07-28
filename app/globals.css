@@ -5,5 +5,5 @@
 body {
   color: #f1f4fd ;
   /* background-color: rgb(5, 7, 123) */
-  background: linear-gradient(90deg, rgba(5,7,123,1) 0%, #224bbb 100%);
+  background: linear-gradient(90deg, #05077b 0%, #224bbb 100%);
 }

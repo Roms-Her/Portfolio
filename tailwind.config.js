@@ -8,27 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: "#141726",
+        backgroundColorBlack: "#05077b",
+        backgroundColorWhite: "#224bbb",
         solid: "#0090FF",
         accessible: "#f1f4fd",
-        backgroundInfo: "#6c22c3b3",
+        solidBlack: "#0d1e6d"
       },
 
       backgroundImage: {
         'roms': "url('/roms.png')",
       },
-
-      // fontSize: {
-      //   sm: "0.8em",
-      //   base: "1em0",
-      //   base2: "1.1em",
-      //   xl: "1.2em",
-      //   '2xl': "1.5em",
-      //   '3xl': "1.8em",
-      //   '35xl': "2em",
-      //   '4xl': "2.5em",
-      //   max: "3em"
-      // },
+      boxShadow: {
+        'contrast': '0 -10px 40px 10px rgba(0,0,0,0.20)',
+      }
     },
   },
   plugins: [require("daisyui")],
