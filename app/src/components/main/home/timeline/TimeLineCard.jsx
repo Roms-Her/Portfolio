@@ -18,8 +18,8 @@ export default function TimeLineCard({ work, isSecondCard }) {
   <div
     className={`timeline-start ${isSecondCard ? 'md:timeline-end md:text-start' : 'md:timeline-start md:text-end'} mb-10`}
   >
-    <time className="italic">{work.date}</time>
-    <h3 className="font-bold md:text-xl my-4">
+    <time className="italic font-bold">{work.date}</time>
+    <h3 className="font-bold  md:text-xl my-4">
       {work.title}
     </h3>
     <p className="md:text-lg hidden sm:flex mb-10">

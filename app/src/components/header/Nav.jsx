@@ -24,12 +24,12 @@ export default function Nav() {
       url: "#timeline",
     },
     {
-      title: "Contact",
-      url: "mailto:romsher.dev@gmail.com",
-    },
-    {
       title: "About",
       url: "#about",
+    },
+    {
+      title: "Contact",
+      url: "mailto:romsher.dev@gmail.com",
     },
   ];
 
