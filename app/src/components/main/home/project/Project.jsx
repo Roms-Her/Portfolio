@@ -75,7 +75,7 @@ export default function Project() {
       </div>
 
       <div
-        className={`fixed z-10  justify-center gap-8 h-5/6 bottom-0 w-full md:w-5/6 2xl:w-3/6 bg-accessible items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all  ${
+        className={`fixed z-10  justify-center gap-8 h-5/6 bottom-0 w-full md:w-5/6 2xl:w-3/6  backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all  ${
           modalVisible ? "translate-y-0" : "translate-y-full"
         }`}
       >

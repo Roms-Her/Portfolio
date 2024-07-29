@@ -71,7 +71,7 @@ export default function Nav() {
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center transition gap-6 uppercase"
+                className="flex items-center transition gap-6 font-bold"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}
@@ -86,7 +86,7 @@ export default function Nav() {
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-6 gap-4 hover:text-orange-500 transition uppercase"
+              className="flex items-center py-2 px-6 gap-4 hover:text-orange-500 transition font-bold"
             >
               {link.title}
             </Link>

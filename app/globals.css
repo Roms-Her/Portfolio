@@ -7,3 +7,21 @@ body {
   /* background-color: rgb(5, 7, 123) */
   background: linear-gradient(90deg, #05077b 0%, #224bbb 100%);
 }
+
+.arrow {
+  animation: arrowMouv 2.5s infinite; 
+  transition: transform 1.5s;
+  cursor: pointer;
+}
+
+@keyframes arrowMouv {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-1.5rem);
+  }
+  100% {
+      transform: translateY(0);
+  } 
+}
