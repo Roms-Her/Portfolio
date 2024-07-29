@@ -31,7 +31,7 @@ function scrollToProjects() {
 
             <p className="mb-2 text-lg md:mb-4 md:text-xl 2xl:text-2xl">Bonjour je suis <strong className="text-orange-500">Romain Hernandez</strong>,</p>
             <h1 className="mb-8 leading-none max-w-xl 2xl:max-w-2xl font-bold  text-6xl md:mb-10 2xl:text-8xl">Bienvenue sur mon portfolio!</h1>
-            <p className="mb-6 text-lg md:mb-8 md:text-xl 2xl:text-2xl">Développeur full stack. Créatif et passionné.</p>
+            <p className="mb-6 text-lg md:mb-8 md:text-xl 2xl:text-2xl">Développeur full stack créatif et passionné.</p>
             <ul className="flex gap-2 flex-wrap md:gap-4 xl:gap-4">
 
                 {links.map((link, index) => (

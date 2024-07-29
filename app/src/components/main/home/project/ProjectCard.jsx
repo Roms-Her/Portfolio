@@ -4,22 +4,23 @@ import LinkButton from '../../../LinkButton'; // Assuming you have a LinkButton 
 
 export default function ProjectCard({ project, setModalVisible }) {
   return (
-    <>
+    
       <div
+      
         id="modal"
         className="flex flex-col h-full w-full "
       >
 
         <button
-          className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-accessible hover:text-orange-500 transition-all"
+          className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-solid hover:text-orange-500 transition-all"
           onClick={() => setModalVisible(false)}
         >
           <IoIosCloseCircle className="text-5xl" />
         </button>
 
-        <figure className="relative w-full h-2/6 flex rounded-3xl">
+        <figure className="relative w-full h-2/5 2xl:h-full flex rounded-3xl">
           <Image
-            className="flex w-full p-12 md:p-20 rounded-t-3xl object-contain"
+            className="flex w-full rounded-t-3xl object-cover"
             src={project.picture}
             width={500}
             height={500}
@@ -44,6 +45,6 @@ export default function ProjectCard({ project, setModalVisible }) {
         </div>
 
       </div>
-    </>
+   
   );
 }

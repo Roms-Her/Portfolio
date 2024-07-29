@@ -1,3 +1,5 @@
+"use client";
+import { motion } from "framer-motion";
 import logoCurieux from "../../../../../../public/softSkills/curious.svg";
 import logoEmpathy from "../../../../../../public/softSkills/empathy.svg";
 import logoCreatif from "../../../../../../public/softSkills/paintbrush.svg";
@@ -19,6 +21,7 @@ import logoTailwindCss from "../../../../../../public/technos/tailwind-black.svg
 import HardSkills from "./typeSkills/HardSkills";
 import SoftSkills from "./typeSkills/SoftSkills";
 export default function Skills() {
+  
   const hardSkills = [
     {
       logo: logoHtml,
@@ -125,14 +128,22 @@ export default function Skills() {
       id="skills"
       class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
     >
-      <div class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10">
+      <div
+        
+        class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10"
+      >
         <h2 class="font-bold mb-6 uppercase text-2xl">Hards Skills</h2>
         <div class="flex mb-4 w-full justify-center">
           <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
             {hardSkills.map((skill, index) => (
-              <li class="uppercase font-semibold md:text-base" key={index}>
+              <motion.li
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.8 }}
+                class="uppercase font-semibold md:text-base"
+                key={index}
+              >
                 <HardSkills skill={skill} />
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>
@@ -144,9 +155,12 @@ export default function Skills() {
         <div class="flex mb-4 w-full justify-center">
           <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5">
             {softSkills.map((skill, index) => (
-              <li key={index} class="uppercase font-semibold md:text-base">
+              <motion.li whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 0.8 }}
+              class="uppercase font-semibold md:text-base"
+              key={index}>
                 <SoftSkills skill={skill}></SoftSkills>
-              </li>
+              </motion.li>
             ))}
           </ul>
         </div>

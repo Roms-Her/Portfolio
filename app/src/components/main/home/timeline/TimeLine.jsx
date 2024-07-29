@@ -1,5 +1,4 @@
 import TimeLineCard from "./TimeLineCard"
-
 export default function TimeLine() {
 
   const worskPath = [

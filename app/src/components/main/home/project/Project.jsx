@@ -1,14 +1,21 @@
 "use client";
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { useInView } from "react-intersection-observer";
 import ProjectCard from "./ProjectCard";
+
 export default function Project() {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   const projects = [
     {
       name: "Gestinvest",
       role: "Product Owner, Développeur fullstack",
-      picture: "/project/gestinvest-logo.png",
+      picture: "/project/gestinvest.png",
       alt: "image du logo gestinvest",
       technos:
         "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
@@ -21,7 +28,7 @@ export default function Project() {
     {
       name: "Roms - Portfolio",
       role: "Développeur fullstack",
-      picture: "/project/ROMS-portfolio.png",
+      picture: "/project/portfolio.png",
       alt: "Image du portfolio de Roms",
       technos: "React, Next.JS, Tailwildcss, HTML, Vercel",
       text: "Ce portfolio, créé par mes soins, retrace mon parcours de développeur, présente mes projets et inclut quelques éléments de ma vie professionnelle avant ma reconversion.",
@@ -49,9 +56,17 @@ export default function Project() {
       id="project-page"
       className="flex flex-col items-center justify-center p-8 md:mb-10 lg:mb-14 text-accessible"
     >
-      <div className="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row  justify-center">
+      <div className="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row justify-center">
         {projects.map((project, index) => (
-          <div
+          <motion.div
+          ref={ref}
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
+          transition={{
+            duration: 0.5,
+            delay: 0,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
             className="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
             key={index}
           >
@@ -59,23 +74,23 @@ export default function Project() {
               <h2 className="text-center font-bold text-lg md:text-xl uppercase">
                 {project.name}
               </h2>
-
               <p className="text-sm md:text-base text-center">{project.bio}</p>
               <button
-                className="bg-solid px-4 py-2 rounded-xl  font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
+                className="bg-solid px-4 py-2 rounded-xl font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
                 onClick={() => {
-                  setModalVisible(true), setSelectedProject(project);
+                  setModalVisible(true);
+                  setSelectedProject(project);
                 }}
               >
                 En savoir plus
               </button>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
 
       <div
-        className={`fixed z-10  justify-center gap-8 h-5/6 bottom-0 w-full md:w-5/6 2xl:w-3/6  backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all  ${
+        className={`fixed z-10 justify-center gap-8 h-5/6 bottom-0 w-full md:w-5/6 2xl:w-3/6 backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all ${
           modalVisible ? "translate-y-0" : "translate-y-full"
         }`}
       >
