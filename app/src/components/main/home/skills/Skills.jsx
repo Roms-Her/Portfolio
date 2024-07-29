@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import logoCurieux from "../../../../../../public/softSkills/curious.svg";
 import logoEmpathy from "../../../../../../public/softSkills/empathy.svg";
 import logoCreatif from "../../../../../../public/softSkills/paintbrush.svg";
@@ -21,7 +22,14 @@ import logoTailwindCss from "../../../../../../public/technos/tailwind-black.svg
 import HardSkills from "./typeSkills/HardSkills";
 import SoftSkills from "./typeSkills/SoftSkills";
 export default function Skills() {
-  
+  const { ref: hardSkillsRef, inView: hardSkillsView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const { ref: softSkillsRef, inView: softSkillsView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
   const hardSkills = [
     {
       logo: logoHtml,
@@ -128,7 +136,15 @@ export default function Skills() {
       id="skills"
       class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
     >
-      <div
+      <motion.div
+      ref={hardSkillsRef}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: hardSkillsView ? 1 : 0, scale: hardSkillsView ? 1 : 0.5 }}
+      transition={{
+        duration: 0.5,
+        delay: 0,
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
         
         class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10"
       >
@@ -147,9 +163,18 @@ export default function Skills() {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
 
-      <div class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
+      <motion.div 
+         ref={softSkillsRef}
+         initial={{ opacity: 0, scale: 0.5 }}
+         animate={{ opacity: softSkillsView ? 1 : 0, scale: softSkillsView ? 1 : 0.5 }}
+         transition={{
+           duration: 0.5,
+           delay: 0,
+           ease: [0, 0.71, 0.2, 1.01],
+         }}
+         class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
         <h2 class="font-bold mb-6 uppercase text-2xl">Softs Skills</h2>
 
         <div class="flex mb-4 w-full justify-center">
@@ -164,7 +189,7 @@ export default function Skills() {
             ))}
           </ul>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 }
