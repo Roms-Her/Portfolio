@@ -87,7 +87,7 @@ export default function Contact() {
       >
         <div className="flex flex-col w-full  gap-4">
           <label className="font-bold text-xl" htmlFor="name">
-            Nom : <span className="text-red-600">*</span>
+            Nom : <span className="text-orange-600">*</span>
           </label>
           <input
             type="text"
@@ -116,7 +116,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-col w-full gap-4">
           <label className="font-bold text-xl" htmlFor="email">
-            Email : <span className="text-red-600">*</span>
+            Email : <span className="text-orange-600">*</span>
           </label>
           <input
             type="email"
@@ -129,7 +129,7 @@ export default function Contact() {
             placeholder=""
           />
           {isSubmitted && !isValidEmail && (
-            <p className="text-red-600">
+            <p className="text-orange-600">
               Veuillez entrer une adresse email valide (ex:
               mon.adresse@gmail.com) *
             </p>
@@ -137,7 +137,7 @@ export default function Contact() {
         </div>
         <div className="flex flex-col w-full gap-4">
           <label className="font-bold text-xl" htmlFor="message">
-            Message : <span className="text-red-600">*</span>
+            Message : <span className="text-orange-600">*</span>
           </label>
           <textarea
           
@@ -154,15 +154,15 @@ export default function Contact() {
         {responseMessage ? (
           <p
             className={`py-2 px-4 ${
-              isValidStatus ? "bg-solid" : "bg-red-600"
-            } `}
+              isValidStatus ? "bg-green-600" : "bg-orange-600"
+            } rounded-xl text-xl font-bold`}
           >
             {responseMessage}
           </p>
         ) : null}
 
         <p className="">
-          <span className="text-red-600">*</span> Champs obligatoires
+          <span className="text-red-500">*</span> Champs obligatoires
         </p>
 
         <button
