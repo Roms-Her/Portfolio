@@ -6,10 +6,10 @@ export default function Welcome() {
 
 
 const links = [
-  {name: "github", url: "https://github.com/Roms-Her"},
-  {name: "linkedin", url: "https://www.linkedin.com/in/romain-hernandez-romsher"},
-  {name: "x", url: "https://twitter.com/dev_roms"},
-  {name: "email", url: "mailto:romsher.dev@gmail.com"}
+  {name: "Github", url: "https://github.com/Roms-Her"},
+  {name: "Linkedin", url: "https://www.linkedin.com/in/romain-hernandez-romsher"},
+  {name: "X", url: "https://twitter.com/dev_roms"},
+  {name: "Contact", url: "/contact"}
 ]
 
 function scrollToProjects() {

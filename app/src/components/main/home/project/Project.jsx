@@ -18,7 +18,7 @@ export default function Project() {
       picture: "/project/gestinvest.png",
       alt: "image du logo gestinvest",
       technos:
-        "React, Node JS, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
+        "React, Node JS, TypeScript, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
       text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. Créé pour un projet d'étude, nous étions 5 développeurs (2 front, 3 back) et avions un mois composé de 4 sprints, en comptant le sprint 0, pour le réaliser. J'ai essentiellement développé la partie back-end de l'application en Node.js et Express (API REST) qui permet de communiquer entre le front et le back.",
       text2:
         "La sécurité est un point important de notre application, c'est pourquoi nous avons choisi de mettre l'accent sur celle-ci. Nous avons développé des algorithmes de calcul de performance pour les actifs financiers détenus par les utilisateurs. Les données des actifs sont mises à jour automatiquement via un CRON que nous avons mis en place, lequel fait appel à différentes API externes pour insérer le prix des actifs à certains moments de la journée. Aujourd'hui, nous continuons d'améliorer le contenu de Gestinvest et de le maintenir en ligne par passion pour ce projet.",
@@ -90,7 +90,7 @@ export default function Project() {
       </div>
 
       <div
-        className={`fixed z-10 justify-center gap-8 h-5/6 bottom-0 w-full md:w-5/6 2xl:w-3/6 backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all ${
+        className={`fixed z-10 justify-center gap-8 h-full bottom-0 w-full md:w-5/6 2xl:w-3/6 backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all ${
           modalVisible ? "translate-y-0" : "translate-y-full"
         }`}
       >

@@ -134,7 +134,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      class="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
+      className="flex flex-col p-8 mb-10 sm:items-center md:mb-24 text-accessible"
     >
       <motion.div
       ref={hardSkillsRef}
@@ -146,16 +146,16 @@ export default function Skills() {
         ease: [0, 0.71, 0.2, 1.01],
       }}
         
-        class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10"
+        className="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8 mb-10"
       >
-        <h2 class="font-bold mb-6 uppercase text-2xl">Hards Skills</h2>
-        <div class="flex mb-4 w-full justify-center">
-          <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
+        <h2 className="font-bold mb-6 uppercase text-2xl">Hards Skills</h2>
+        <div className="flex mb-4 w-full justify-center">
+          <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-8 lg:w-4/5">
             {hardSkills.map((skill, index) => (
               <motion.li
                 whileHover={{ scale: 1.2 }}
                 whileTap={{ scale: 0.8 }}
-                class="uppercase font-semibold md:text-base"
+                className="uppercase font-semibold md:text-base"
                 key={index}
               >
                 <HardSkills skill={skill} />
@@ -174,15 +174,15 @@ export default function Skills() {
            delay: 0,
            ease: [0, 0.71, 0.2, 1.01],
          }}
-         class="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
-        <h2 class="font-bold mb-6 uppercase text-2xl">Softs Skills</h2>
+         className="backdrop-blur-xl bg-[#d6e0ff40] shadow-xl flex flex-col w-full rounded-3xl p-4 items-center lg:w-5/6 2xl:w-4/6 md:p-8">
+        <h2 className="font-bold mb-6 uppercase text-2xl">Softs Skills</h2>
 
-        <div class="flex mb-4 w-full justify-center">
-          <ul class="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5">
+        <div className="flex mb-4 w-full justify-center">
+          <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-10 lg:w-4/5">
             {softSkills.map((skill, index) => (
               <motion.li whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
-              class="uppercase font-semibold md:text-base"
+              className="uppercase font-semibold md:text-base"
               key={index}>
                 <SoftSkills skill={skill}></SoftSkills>
               </motion.li>

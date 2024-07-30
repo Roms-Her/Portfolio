@@ -18,7 +18,7 @@ export default function ProjectCard({ project, setModalVisible }) {
           <IoIosCloseCircle className="text-5xl" />
         </button>
 
-        <figure className="relative w-full h-2/5 2xl:h-full flex rounded-3xl">
+        <figure className="relative w-full h-2/5 flex rounded-3xl">
           <Image
             className="flex w-full rounded-t-3xl object-cover"
             src={project.picture}

@@ -9,27 +9,28 @@ export default function Nav() {
   const navLinks = [
     {
       title: "Accueil",
-      url: "",
+      url: "/",
     },
     {
       title: "Projets",
-      url: "#project-page",
+      url: "/#project-page",
     },
     {
       title: "Skills",
-      url: "#skills",
+      url: "/#skills",
     },
     {
       title: "Parcours",
-      url: "#timeline",
+      url: "/#timeline",
     },
     {
       title: "About",
-      url: "#about",
+      url: "/#about",
     },
     {
       title: "Contact",
-      url: "mailto:romsher.dev@gmail.com",
+      // url: "mailto:romsher.dev@gmail.com",
+      url: "/contact",
     },
   ];
 
