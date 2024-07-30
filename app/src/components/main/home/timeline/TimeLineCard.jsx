@@ -38,7 +38,7 @@ export default function TimeLineCard({ work, isSecondCard }) {
         } mb-10`}
       >
         <time className="italic font-bold">{work.date}</time>
-        <h3 className="font-bold  md:text-xl my-4">{work.title}</h3>
+        <h3 className="font-bold text-orange-500  md:text-xl my-4">{work.title}</h3>
         <p className="md:text-lg hidden sm:flex mb-10">
           {work.desktopPresentation}
         </p>

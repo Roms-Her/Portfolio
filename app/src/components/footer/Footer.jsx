@@ -33,7 +33,7 @@ export default function Footer() {
             <ul className="flex gap-4 md:gap-8">
               {socialIcons.map((item, index) => (
                 <li key={index} className="flex items-center justify-center">
-                  {/* {console.log(item.link)} */}
+                
                   <Link
                     href={item.link}
                     className="w-8 md:w-12 rounded-xl uppercase tracking-widest font-medium"
