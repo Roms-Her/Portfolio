@@ -1,11 +1,11 @@
 "use client";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import logoCurieux from "../../../../../../public/softSkills/curious.svg";
-import logoEmpathy from "../../../../../../public/softSkills/empathy.svg";
-import logoCreatif from "../../../../../../public/softSkills/paintbrush.svg";
-import logoPassion from "../../../../../../public/softSkills/passionate.svg";
-import logoCoworking from "../../../../../../public/softSkills/team.svg";
+import logoCurieux from "../../../../../../public/softskills/curious.svg";
+import logoEmpathy from "../../../../../../public/softskills/empathy.svg";
+import logoCreatif from "../../../../../../public/softskills/paintbrush.svg";
+import logoPassion from "../../../../../../public/softskills/passionate.svg";
+import logoCoworking from "../../../../../../public/softskills/team.svg";
 import logoCss from "../../../../../../public/technos/css-black.svg";
 import logoExpressJs from "../../../../../../public/technos/express.svg";
 import logoGit from "../../../../../../public/technos/git-black.svg";
