@@ -8,11 +8,19 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        backgroundColor: "#141726",
+        backgroundColorBlack: "#05077b",
+        backgroundColorWhite: "#224bbb",
         solid: "#0090FF",
         accessible: "#f1f4fd",
-        backgroundInfo: "#6c22c3b3",
+        solidBlack: "#0d1e6d"
       },
+
+      backgroundImage: {
+        'roms': "url('/roms.png')",
+      },
+      boxShadow: {
+        'contrast': '0 -10px 40px 10px rgba(0,0,0,0.20)',
+      }
     },
   },
   plugins: [require("daisyui")],

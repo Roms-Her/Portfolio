@@ -9,34 +9,37 @@ export default function Nav() {
   const navLinks = [
     {
       title: "Accueil",
-      url: "",
+      url: "/",
     },
     {
       title: "Projets",
-      url: "#project-page",
+      url: "/#project-page",
     },
     {
       title: "Skills",
-      url: "#skills",
+      url: "/#skills",
     },
     {
       title: "Parcours",
-      url: "#timeline",
-    },
-    {
-      title: "Contact",
-      url: "mailto:romsher.dev@gmail.com",
+      url: "/#timeline",
     },
     {
       title: "About",
-      url: "#about",
+      url: "/#about",
+    },
+    {
+      title: "Contact",
+      // url: "mailto:romsher.dev@gmail.com",
+      url: "/contact",
     },
   ];
 
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky z-50 flex px-8 sm:px-8 py-6 lg:py-12 items-center justify-between gap-10">
+    <nav
+      className="m-auto flex items-center justify-between gap-10 w-full p-6 lg:w-5/6 2xl:w-4/6 md:mb-10"
+    >
       <Link href="/">
         <Image
           src={RomsLogo}
@@ -48,12 +51,12 @@ export default function Nav() {
       </Link>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="lg:hidden p-2 rounded-m transition-all"
+        className="xl:hidden p-2 rounded-m transition-all"
       >
         <IoMenu className="h-10 w-10" />
       </button>
       <ul
-        className={`lg:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-solid p-6 sm:p-20 sm:text-lg transition-all  ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-backgroundColorWhite p-12 sm:p-20 text-xl transition-all shadow-contrast ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -65,14 +68,11 @@ export default function Nav() {
         </button>
 
         {navLinks.map((link, index) => (
-          <li
-            key={index}
-            className="relative flex flex-col w-full"
-          >
+          <li key={index} className="relative flex flex-col w-full">
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center transition gap-6 uppercase"
+                className="flex items-center transition gap-6 font-bold px-6 py-3 rounded-xl backdrop-blur-xl bg-[#d6e0ff40] shadow-xl"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}
@@ -82,12 +82,12 @@ export default function Nav() {
         ))}
       </ul>
 
-      <ul className="hidden lg:flex gap-2">
+      <ul className="hidden xl:flex gap-2">
         {navLinks.map((link, index) => (
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-6 gap-4 hover:text-solid transition uppercase"
+              className="flex items-center py-2 px-6 gap-4 hover:text-orange-500 transition font-bold"
             >
               {link.title}
             </Link>
