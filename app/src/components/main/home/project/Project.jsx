@@ -23,14 +23,14 @@ export default function Project() {
       text2:
         "La sécurité est un point important de notre application, c'est pourquoi nous avons choisi de mettre l'accent sur celle-ci. Nous avons développé des algorithmes de calcul de performance pour les actifs financiers détenus par les utilisateurs. Les données des actifs sont mises à jour automatiquement via un CRON que nous avons mis en place, lequel fait appel à différentes API externes pour insérer le prix des actifs à certains moments de la journée. Aujourd'hui, nous continuons d'améliorer le contenu de Gestinvest et de le maintenir en ligne par passion pour ce projet.",
       bio: "Application de gestion de portefeuille d'actifs financiers (SaaS). j'ai occupé le poste de Product Owner et de développeur fullstack sur ce projet.",
-      // link: "https://gestinvest-front-8af1ad4ce95a.herokuapp.com/",
+      link: "https://github.com/Roms-Her/Gestinvest-back",
     },
     {
       name: "Roms - Portfolio",
       role: "Développeur fullstack",
       picture: "/project/portfolio.png",
       alt: "Image du portfolio de Roms",
-      technos: "React, Next.JS, Tailwildcss, HTML, Vercel",
+      technos: "React, Next.JS, Tailwild CSS, HTML, Vercel",
       text: "Ce portfolio, créé par mes soins, retrace mon parcours de développeur, présente mes projets et inclut quelques éléments de ma vie professionnelle avant ma reconversion.",
       text2:
         "Ce site vitrine est d'abord réalisé avec Vue.js et TailwindCSS, puis recodé avec une technologie plus avancée : Next.js, basé sur React. Il est hébergé sur Vercel. Pour rendre le site adaptable à l'ajout éventuel d'une base de données, j'ai opté pour un traitement de données entièrement dynamique. Grâce à Next.js, le site est optimisé pour le SEO grâce à son rendu SSR.",
@@ -42,7 +42,7 @@ export default function Project() {
       role: "Développeur fullstack",
       picture: "/project/ttfarguais.png",
       alt: "Image du T.T. Farguais",
-      technos: "Node JS, React, Next.js, Tailwindcss, Vercel",
+      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
       text: "Après la refonte graphique du club de tennis de table T.T. Farguais que j'ai effectuée en 2024, j'ai proposé mes services de développeur web pour la mise à jour de leur site web. Le site initial fut créé dans les années 2000 et n'a pas évolué au fil du temps. J'ai donc travaillé en collaboration avec les membres du bureau sur la refonte complète du site web en me focalisant sur une meilleure performance, une meilleure expérience utilisateur et un meilleur référencement.",
       text2:
         "Le site est réalisé sous Node.js avec le framework React et la surcouche Next.js. De cette manière, le traitement des données SSR (Server-Side Rendering) permet un référencement optimal et un temps de chargement inital plus rapide. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Le site web ne contient aucune base de données, mais j'ai réalisé le code source de manière à ce que les futures données extraites de la BDD puissent être intégrées facilement.",
