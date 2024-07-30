@@ -20,7 +20,7 @@ export default function Footer() {
     {
       name: "mail",
       icon: "/sociaux/mail.svg",
-      link: "mailto:romsher.dev@gmail.com",
+      link: "/contact",
     },
   ];
 
