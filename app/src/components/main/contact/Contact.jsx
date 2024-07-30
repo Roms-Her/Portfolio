@@ -67,11 +67,11 @@ export default function Contact() {
   const isValidEmail = regexEmail.test(formData.email);
 
   return (
-    <section className="flex flex-col gap-6 mb-12">
+    <section className="flex flex-col gap-6 mb-12 min-h-lvh justify-center">
       <h1 className="w-full text-center text-3xl font-bold p-6">
         Fomulaire de contact
       </h1>
-      <div className="m-auto text-lg flex flex-col gap-4 p-6 sm:w-5/6 md:w-4/6 lg:w-3/6 2xl:w-2/6 text-justify">
+      <div className="mx-auto text-lg flex flex-col gap-4 p-6 sm:w-5/6 md:w-4/6 lg:w-3/6 2xl:w-2/6 text-justify">
         <p>
           Vous souhaitez lancer votre activité professionnelle ou bien mettre en
           avant vos compétences ? Alors, je serai ravi de vous accompagner.
@@ -83,7 +83,7 @@ export default function Contact() {
       </div>
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center gap-10 w-full sm:w-5/6 md:w-4/6 lg:w-3/6 2xl:w-2/6 m-auto p-6"
+        className="flex flex-col items-center gap-10 w-full sm:w-5/6 md:w-4/6 lg:w-3/6 2xl:w-2/6 mx-auto p-6"
       >
         <div className="flex flex-col w-full  gap-4">
           <label className="font-bold text-xl" htmlFor="name">

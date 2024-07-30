@@ -4,7 +4,7 @@ export default function MoreInformations() {
   return (
     <section
       id="about"
-      className="relative flex flex-col px-8 pt-24 pb-8 items-center text-accessible w-full h-full bg-solid shadow-contrast " 
+      className="relative flex flex-col px-8 pt-24 pb-8 items-center text-accessible w-full h-full bg-backgroundColorWhite shadow-contrast " 
     >
       {/* <div className="absolute top-0 w-full h-full bg-orange-500 rounded-tl-full"></div> */}
 
