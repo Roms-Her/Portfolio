@@ -126,8 +126,8 @@ export default function Skills() {
     {
       logo: logoCoworking,
       alt: "image représentant le travail d'équipe",
-      description: "équipe",
-      doc: "https://asana.com/fr/resources/teamwork-in-the-workplace",
+      description: "Collaboratif",
+      doc: "https://asana.com/fr/resources/collaboration-in-the-workplace",
     },
   ];
 
@@ -182,7 +182,7 @@ export default function Skills() {
             {softSkills.map((skill, index) => (
               <motion.li whileHover={{ scale: 1.2 }}
               whileTap={{ scale: 0.8 }}
-              className="uppercase font-semibold md:text-base"
+              className=" font-semibold md:text-base"
               key={index}>
                 <SoftSkills skill={skill}></SoftSkills>
               </motion.li>

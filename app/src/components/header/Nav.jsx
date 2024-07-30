@@ -56,7 +56,7 @@ export default function Nav() {
         <IoMenu className="h-10 w-10" />
       </button>
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 sm:w-3/6 bg-[#224bbb] p-12 sm:p-20 text-xl transition-all  ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-backgroundColorWhite p-12 sm:p-20 text-xl transition-all shadow-contrast ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -72,7 +72,7 @@ export default function Nav() {
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center transition gap-6 font-bold"
+                className="flex items-center transition gap-6 font-bold px-6 py-3 rounded-xl backdrop-blur-xl bg-[#d6e0ff40] shadow-xl"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}

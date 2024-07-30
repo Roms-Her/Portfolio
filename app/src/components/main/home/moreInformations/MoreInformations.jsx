@@ -42,7 +42,7 @@ export default function MoreInformations() {
 
         <Link
           className="bg-accessible text-black px-4 py-2 rounded-xl uppercase font-medium text-sm border border-solid hover:bg-orange-500 hover:text-accessible hover:border-orange-800 hover:shadow-xl transition-all ease-out "
-          href="/pdf/cv-romain-hernandez.pdf"
+          href="/pdf/CV.pdf"
           download="CV_romain-hernandez"
           target="_blank"
         >
