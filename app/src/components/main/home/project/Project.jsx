@@ -16,7 +16,7 @@ export default function Project() {
       name: "Gestinvest",
       role: "Product Owner, Développeur fullstack",
       picture: "/project/gestinvest.png",
-      alt: "image du logo gestinvest",
+      alt: "Capture d'écran de l'application Gestinvest",
       technos:
         "React, Node JS, TypeScript, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
       text: "Gestinvest est une application de gestion de portefeuille d'actifs. Elle permet de suivre l'évolution de ses investissements en temps réel. J'ai travaillé sur ce projet en tant que Product Owner. Créé pour un projet d'étude, nous étions 5 développeurs (2 front, 3 back) et avions un mois composé de 4 sprints, en comptant le sprint 0, pour le réaliser. J'ai essentiellement développé la partie back-end de l'application en Node.js et Express (API REST) qui permet de communiquer entre le front et le back.",
@@ -29,7 +29,7 @@ export default function Project() {
       name: "Roms - Portfolio",
       role: "Développeur fullstack",
       picture: "/project/portfolio.png",
-      alt: "Image du portfolio de Roms",
+      alt: "Capture d'écran de mon portfolio",
       technos: "React, Next.JS, Tailwild CSS, HTML, Vercel",
       text: "Ce portfolio, créé par mes soins, retrace mon parcours de développeur, présente mes projets et inclut quelques éléments de ma vie professionnelle avant ma reconversion.",
       text2:
@@ -41,13 +41,24 @@ export default function Project() {
       name: "Tennis de Table Farguais",
       role: "Développeur fullstack",
       picture: "/project/ttfarguais.png",
-      alt: "Image du T.T. Farguais",
+      alt: "Capture d'écran du site web du club de tennis de table T.T. Farguais",
       technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
       text: "Après la refonte graphique du club de tennis de table T.T. Farguais que j'ai effectuée en 2024, j'ai proposé mes services de développeur web pour la mise à jour de leur site web. Le site initial fut créé dans les années 2000 et n'a pas évolué au fil du temps. J'ai donc travaillé en collaboration avec les membres du bureau sur la refonte complète du site web en me focalisant sur une meilleure performance, une meilleure expérience utilisateur et un meilleur référencement.",
       text2:
         "Le site est réalisé sous Node.js avec le framework React et la surcouche Next.js. De cette manière, le traitement des données SSR (Server-Side Rendering) permet un référencement optimal et un temps de chargement inital plus rapide. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Le site web ne contient aucune base de données, mais j'ai réalisé le code source de manière à ce que les futures données extraites de la BDD puissent être intégrées facilement.",
       bio: "Site web du club de tennis de table T.T. Farguais. J'ai occupé le poste de développeur fullstack sur ce projet.",
       link: "https://tt-farguais.vercel.app/",
+    },
+    {
+      name: "Météodou",
+      role: "Développeur",
+      picture: "/project/meteodou.png",
+      alt: "Capture d'écran de l'application Météodou",
+      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel, WeatherAPI",
+      text: "Météodou est une application météo qui permet de connaître la météo de la journée. J'ai travaillé sur ce projet en tant que développeur. C'est un simple projet qui a pour but de renforcer mes compétences en développement web.",
+      text2:"L'application est réalisée avec Node.js, le framework React et la surcouche Next.js. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Les données utilisées sont extraites de Weather API, une API dédiée à la météo. De ce fait, l'application web ne contient aucune base de données.",
+      bio: "Application météo. Projet a but pédagogique pour renforcer mes compétences en développement web.",
+      link: "https://meteodou.vercel.app/",
     },
   ];
 
