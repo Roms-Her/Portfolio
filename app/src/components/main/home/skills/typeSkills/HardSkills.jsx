@@ -9,8 +9,8 @@ export default function SkillsCard({skill}) {
             className="w-full"
             src={skill.logo}
             alt={skill.alt}
-            width={500}
-            height={500}
+            width={100}
+            height={100}
           />
         </Link>
       </div>

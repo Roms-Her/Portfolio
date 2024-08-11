@@ -6,21 +6,25 @@ export default function Footer() {
       name: "Linkedin",
       icon: "/sociaux/linkedin.svg",
       link: "https://www.linkedin.com/in/romain-hernandez-romsher",
+      alt: "Logo Linkedin",
     },
     {
       name: "X",
       icon: "/sociaux/x.svg",
       link: "https://twitter.com/dev_roms",
+      alt: "Logo Twitter",
     },
     {
       name: "Github",
       icon: "/sociaux/github.svg",
       link: "https://github.com/Roms-Her",
+      alt: "Logo Github",
     },
     {
       name: "mail",
       icon: "/sociaux/mail.svg",
       link: "/contact",
+      alt: "Logo mail",
     },
   ];
 
@@ -33,7 +37,6 @@ export default function Footer() {
             <ul className="flex gap-4 md:gap-8">
               {socialIcons.map((item, index) => (
                 <li key={index} className="flex items-center justify-center">
-                
                   <Link
                     href={item.link}
                     className="w-8 md:w-12 rounded-xl uppercase tracking-widest font-medium"
@@ -41,7 +44,7 @@ export default function Footer() {
                   >
                     <Image
                       src={item.icon}
-                      alt={item.name}
+                      alt={item.alt}
                       width={500}
                       height={500}
                     />

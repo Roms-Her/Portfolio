@@ -1,16 +1,49 @@
 "use client";
-import { motion } from "framer-motion";
-import { useState } from "react";
-import { useInView } from "react-intersection-observer";
-import ProjectCard from "./ProjectCard";
+import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { useInView } from 'react-intersection-observer';
+import ProjectOpen from './ProjectOpen';
+function ProjectCard({ project, index, setModalVisible, setSelectedProject }) {
+  const { ref, inView } = useInView({
+    triggerOnce: true, 
+    threshold: 0.1,    
+  });
+
+  return (
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, scale: 0.5 }}
+      animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
+      transition={{
+        duration: 0.5,
+        delay: index * 0.1, 
+        ease: [0, 0.71, 0.2, 1.01],
+      }}
+      className={`flex p-6 backdrop-blur-xl bg-[#d6e0ff40]  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl`}
+    >
+      <div className="flex flex-col gap-6 items-center justify-between">
+        <h2 className="text-center font-bold text-lg md:text-xl uppercase">
+          {project.name}
+        </h2>
+        <p className="text-sm md:text-base text-center">{project.bio}</p>
+        <button
+          className="bg-solid px-4 py-2 rounded-xl font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
+          onClick={() => {
+            setModalVisible(true);
+            setSelectedProject(project);
+          }}
+        >
+          En savoir plus
+        </button>
+      </div>
+    </motion.div>
+  );
+}
 
 export default function Project() {
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.1,
-  });
+
   const projects = [
     {
       name: "Gestinvest",
@@ -51,7 +84,7 @@ export default function Project() {
     },
     {
       name: "Météodou",
-      role: "Développeur",
+      role: "Développeur fullstack",
       picture: "/project/meteodou.png",
       alt: "Capture d'écran de l'application Météodou",
       technos: "Node JS, React, Next.js, Tailwind CSS, Vercel, WeatherAPI",
@@ -59,6 +92,18 @@ export default function Project() {
       text2:"L'application est réalisée avec Node.js, le framework React et la surcouche Next.js. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Les données utilisées sont extraites de Weather API, une API dédiée à la météo. De ce fait, l'application web ne contient aucune base de données.",
       bio: "Application météo. Projet a but pédagogique pour renforcer mes compétences en développement web.",
       link: "https://meteodou.vercel.app/",
+    },
+    {
+      name: "Blogart",
+      role: "Développeur fullstack",
+      picture: "/project/blogart.png",
+      alt: "Capture d'écran de l'application Blogart",
+      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
+      text: "Blogart est un blog personnel qui me permetra de partager des articles sur des sujets touchant a l'art. Ce projet est en cours de développement.",
+      text2:"L'application est réalisée avec Node.js, le framework React et la surcouche Next.js. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Le site web contiendra une base de données complète qui me permettra de stocker les informations relatives à chaque blog, notamment les commentaires des futurs utilisateurs.",
+      bio: "Blog personnel. Projet en cours de développement.",
+      // link: "https://meteodou.vercel.app/",
+      onDeveloppement: true,
     },
   ];
 
@@ -69,44 +114,23 @@ export default function Project() {
     >
       <div className="flex flex-col flex-wrap gap-10 lg:w-5/6 2xl:w-4/6 sm:flex-row justify-center">
         {projects.map((project, index) => (
-          <motion.div
-          ref={ref}
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: inView ? 1 : 0, scale: inView ? 1 : 0.5 }}
-          transition={{
-            duration: 0.5,
-            delay: 0,
-            ease: [0, 0.71, 0.2, 1.01],
-          }}
-            className="flex p-6 backdrop-blur-xl bg-[#d6e0ff40] shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl"
+          <ProjectCard
             key={index}
-          >
-            <div className="flex flex-col gap-6 items-center justify-between">
-              <h2 className="text-center font-bold text-lg md:text-xl uppercase">
-                {project.name}
-              </h2>
-              <p className="text-sm md:text-base text-center">{project.bio}</p>
-              <button
-                className="bg-solid px-4 py-2 rounded-xl font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
-                onClick={() => {
-                  setModalVisible(true);
-                  setSelectedProject(project);
-                }}
-              >
-                En savoir plus
-              </button>
-            </div>
-          </motion.div>
+            project={project}
+            index={index}
+            setModalVisible={setModalVisible}
+            setSelectedProject={setSelectedProject}
+          />
         ))}
       </div>
 
       <div
-        className={`fixed z-10 justify-center gap-8 h-full bottom-0 w-full md:w-5/6 2xl:w-3/6 backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all ${
-          modalVisible ? "translate-y-0" : "translate-y-full"
+        className={`fixed z-10 justify-center gap-8 h-[90%] bottom-0 w-full md:w-5/6 2xl:w-3/6 backdrop-blur-3xl bg-[#d6e0ff40] items-center rounded-tl-3xl rounded-tr-3xl shadow-2xl border-accessible border-x border-t transition-all ${
+          modalVisible ? 'translate-y-0' : 'translate-y-full'
         }`}
       >
         {modalVisible && selectedProject && (
-          <ProjectCard
+          <ProjectOpen
             project={selectedProject}
             setModalVisible={setModalVisible}
           />
@@ -115,3 +139,5 @@ export default function Project() {
     </section>
   );
 }
+
+
