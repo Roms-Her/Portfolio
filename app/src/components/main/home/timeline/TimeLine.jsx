@@ -29,8 +29,8 @@ export default function TimeLine() {
     {
       date: "Juin 2024",
       title: "Diplôme de Développeur Web et Web Mobile",
-      desktopPresentation: "Soutenance de mon projet Gestinvest et obtention du titre professionnel de Développeur Web et Web Mobile avec succès.",
-      mobilePresentation: "Soutenance de mon projet Gestinvest et obtention du titre professionnel de Développeur Web et Web Mobile avec succès."
+      desktopPresentation: "Soutenance de mon projet Gestinvest et obtention du titre professionnel de Développeur Web et Web Mobile, diplôme de niveau 5.",
+      mobilePresentation: "Soutenance de mon projet Gestinvest et obtention du titre professionnel de Développeur Web et Web Mobile, diplôme de niveau 5.©"
     },
     {
       date: "Juillet 2024 - Aujourd'hui",
