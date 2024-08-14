@@ -19,6 +19,7 @@ import logoReact from "../../../../../../public/technos/react-black.svg";
 import logoSequelize from "../../../../../../public/technos/sequelize-black.svg";
 import logoSqitch from "../../../../../../public/technos/sqitch-black.svg";
 import logoTailwindCss from "../../../../../../public/technos/tailwind-black.svg";
+import logoTypescript from "../../../../../../public/technos/typescript-black.svg";
 import HardSkills from "./typeSkills/HardSkills";
 import SoftSkills from "./typeSkills/SoftSkills";
 export default function Skills() {
@@ -45,6 +46,11 @@ export default function Skills() {
       logo: logoJavascript,
       alt: "logo Javascript",
       doc: "https://developer.mozilla.org/fr/docs/Web/JavaScript",
+    },
+    {
+      logo: logoTypescript,
+      alt: "logo Typescript",
+      doc: "https://www.typescriptlang.org/",
     },
     {
       logo: logoReact,
