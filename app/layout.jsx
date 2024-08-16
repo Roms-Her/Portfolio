@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Footer from "./src/components/footer/Footer";
 import Nav from "./src/components/header/Nav";
+import { GoogleTagManager } from '@next/third-parties/google';
 
 const inter = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -13,6 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr">
+      <GoogleTagManager gtmId="GTM-NBQ4NGNP" />
       <body className={inter.className}>
         <header>
           <Nav />
