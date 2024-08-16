@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.romain-hernandez.com
+
+# Sitemaps
+Sitemap: https://www.romain-hernandez.com/sitemap.xml
