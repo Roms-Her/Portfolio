@@ -80,7 +80,7 @@ export default function Project() {
       text2:
         "Le site est réalisé sous Node.js avec le framework React et la surcouche Next.js. De cette manière, le traitement des données SSR (Server-Side Rendering) permet un référencement optimal et un temps de chargement inital plus rapide. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Le site web ne contient aucune base de données, mais j'ai réalisé le code source de manière à ce que les futures données extraites de la BDD puissent être intégrées facilement.",
       bio: "Site web du club de tennis de table T.T. Farguais. J'ai occupé le poste de développeur fullstack sur ce projet.",
-      link: "https://tt-farguais.vercel.app/",
+      link: "https://ttfarguais.fr/",
     },
     {
       name: "Météodou",
