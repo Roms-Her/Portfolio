@@ -105,6 +105,18 @@ export default function Project() {
       // link: "https://meteodou.vercel.app/",
       onDeveloppement: true,
     },
+    {
+      name: "Xpress Convert",
+      role: "Développeur fullstack",
+      picture: "/project/xpress.png",
+      alt: "Capture d'écran de l'application Xpress Convert",
+      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
+      text: "Xpress Convert est une application de conversion d'unités de mesure. Elle permet de convertir des unités de mesure de longueur, de masse, de volume, de vitesse, de temps.",
+      text2:"L'application est réalisée avec Node.js, le framework React et la surcouche Next.js. C'est un projet open source qui évolura au fil du temps. Des test techniques sont en cours de développement pour garantir la qualité du code.",
+      bio: "Application de conversion d'unités de mesure. Projet open source en production.",
+      link: "https://xpress-convert.vercel.app/",
+      onDeveloppement: true,
+    },
   ];
 
   return (
