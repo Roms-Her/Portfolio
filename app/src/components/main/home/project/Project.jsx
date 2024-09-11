@@ -87,11 +87,11 @@ export default function Project() {
       role: "Développeur fullstack",
       picture: "/project/meteodou.png",
       alt: "Capture d'écran de l'application Météodou",
-      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel, WeatherAPI",
+      technos: "Node JS, React, Next.js, Tailwind CSS, Vercel, WeatherAPI, Google Enable API",
       text: "Météodou est une application météo qui permet de connaître la météo de la journée. J'ai travaillé sur ce projet en tant que développeur. C'est un simple projet qui a pour but de renforcer mes compétences en développement web.",
       text2:"L'application est réalisée avec Node.js, le framework React et la surcouche Next.js. Le site est hébergé sur Vercel. J'ai pris la décision d'utiliser TailwindCSS pour la rapidité de développement et la facilité de maintenance. Les données utilisées sont extraites de Weather API, une API dédiée à la météo. De ce fait, l'application web ne contient aucune base de données.",
       bio: "Application météo. Projet a but pédagogique pour renforcer mes compétences en développement web.",
-      link: "https://meteodou.vercel.app/",
+      link: "https://weather-beryl-one.vercel.app/",
     },
     {
       name: "Blogart",
