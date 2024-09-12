@@ -1,8 +1,15 @@
+import Blogart from "../../../public/project/blogart.png";
+import Gestinvest from "../../../public/project/gestinvest.png";
+import Meteodou from "../../../public/project/meteodou.png";
+import Portfolio from "../../../public/project/portfolio.png";
+import TTFarguais from "../../../public/project/ttfarguais.png";
+import Xpress from "../../../public/project/xpress.png";
+
 const projects = [
   {
     name: "Gestinvest",
     role: "Product Owner, Développeur fullstack",
-    picture: "/project/gestinvest.png",
+    picture: Gestinvest,
     alt: "Capture d'écran de l'application Gestinvest",
     technos:
       "React, Node JS, TypeScript, Express, Sqitch, Tailwildcss, Jest, PostgreSQL, Heroku",
@@ -15,7 +22,7 @@ const projects = [
   {
     name: "Roms - Portfolio",
     role: "Développeur fullstack",
-    picture: "/project/portfolio.png",
+    picture: Portfolio,
     alt: "Capture d'écran de mon portfolio",
     technos: "React, Next.JS, Tailwild CSS, HTML, Vercel",
     text: "Ce portfolio, créé par mes soins, retrace mon parcours de développeur, présente mes projets et inclut quelques éléments de ma vie professionnelle avant ma reconversion.",
@@ -27,7 +34,7 @@ const projects = [
   {
     name: "Tennis de Table Farguais",
     role: "Développeur fullstack",
-    picture: "/project/ttfarguais.png",
+    picture: TTFarguais,
     alt: "Capture d'écran du site web du club de tennis de table T.T. Farguais",
     technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
     text: "Après la refonte graphique du club de tennis de table T.T. Farguais que j'ai effectuée en 2024, j'ai proposé mes services de développeur web pour la mise à jour de leur site web. Le site initial fut créé dans les années 2000 et n'a pas évolué au fil du temps. J'ai donc travaillé en collaboration avec les membres du bureau sur la refonte complète du site web en me focalisant sur une meilleure performance, une meilleure expérience utilisateur et un meilleur référencement.",
@@ -39,7 +46,7 @@ const projects = [
   {
     name: "Météodou",
     role: "Développeur fullstack",
-    picture: "/project/meteodou.png",
+    picture: Meteodou,
     alt: "Capture d'écran de l'application Météodou",
     technos: "Node JS, React, Next.js, Tailwind CSS, Vercel, WeatherAPI, Google Enable API",
     text: "Météodou est une application météo qui permet de connaître la météo de la journée. J'ai travaillé sur ce projet en tant que développeur. C'est un simple projet qui a pour but de renforcer mes compétences en développement web.",
@@ -50,7 +57,7 @@ const projects = [
   {
     name: "Blogart",
     role: "Développeur fullstack",
-    picture: "/project/blogart.png",
+    picture: Blogart,
     alt: "Capture d'écran de l'application Blogart",
     technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
     text: "Blogart est un blog personnel qui me permetra de partager des articles sur des sujets touchant a l'art. Ce projet est en cours de développement.",
@@ -62,7 +69,7 @@ const projects = [
   {
     name: "Xpress Convert",
     role: "Développeur fullstack",
-    picture: "/project/xpress.png",
+    picture: Xpress,
     alt: "Capture d'écran de l'application Xpress Convert",
     technos: "Node JS, React, Next.js, Tailwind CSS, Vercel",
     text: "Xpress Convert est une application de conversion d'unités de mesure. Elle permet de convertir des unités de mesure de longueur, de masse, de volume, de vitesse, de temps.",
