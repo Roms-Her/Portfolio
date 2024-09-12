@@ -3,36 +3,10 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
-
 import RomsLogo from "../../../../public/roms.svg";
+import navLinks from "../../../src/site/links";
 export default function Nav() {
-  const navLinks = [
-    {
-      title: "Accueil",
-      url: "/",
-    },
-    {
-      title: "Projets",
-      url: "/#project-page",
-    },
-    {
-      title: "Skills",
-      url: "/#skills",
-    },
-    {
-      title: "Parcours",
-      url: "/#timeline",
-    },
-    {
-      title: "About",
-      url: "/#about",
-    },
-    {
-      title: "Contact",
-      // url: "mailto:romsher.dev@gmail.com",
-      url: "/contact",
-    },
-  ];
+  
 
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -87,7 +61,7 @@ export default function Nav() {
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-6 gap-4 hover:text-orange-500 transition font-bold"
+              className="flex items-center py-2 px-2 gap-4 hover:text-orange-500 transition font-bold"
             >
               {link.title}
             </Link>

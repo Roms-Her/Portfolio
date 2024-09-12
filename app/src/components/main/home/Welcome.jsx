@@ -1,16 +1,8 @@
 'use client'
 import { FaArrowDownLong } from "react-icons/fa6";
+import links from "../../../../src/site/socialLinks";
 import LinkButton from "../../LinkButton";
-
 export default function Welcome() {
-
-
-const links = [
-  {name: "Github", url: "https://github.com/Roms-Her"},
-  {name: "Linkedin", url: "https://www.linkedin.com/in/romain-hernandez-romsher"},
-  {name: "X", url: "https://twitter.com/dev_roms"},
-  {name: "Contact", url: "/contact"}
-]
 
 function scrollToProjects() {
     const projectPage = document.querySelector('#project-page');

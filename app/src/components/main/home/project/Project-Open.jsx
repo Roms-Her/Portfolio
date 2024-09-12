@@ -1,8 +1,8 @@
 import Image from "next/image";
 import { IoIosCloseCircle } from "react-icons/io";
 import LinkButton from "../../../LinkButton"; // Assuming you have a LinkButton component
-export default function ProjectCard({ project, setModalVisible }) {
-  const technosSplit = project.technos.split(", ")
+export default function ProjectOpen({ project, setModalVisible }) {
+  const technosSplit = project.technos.split(", ");
   let technosArray = [];
   technosArray.push(...technosSplit);
 
@@ -43,13 +43,18 @@ export default function ProjectCard({ project, setModalVisible }) {
           </h4>
           <p className="flex flex-wrap gap-2 mb-6 md:justify-center">
             {technosArray.map((techno, index) => (
-              <span className="badge badge-outline badge-lg text-bold text-center text-orange-500" key={index}>{techno}</span>
+              <span
+                className="badge badge-outline badge-lg text-bold text-center text-orange-500"
+                key={index}
+              >
+                {techno}
+              </span>
             ))}
           </p>
         </div>
-          {project.link && (
-            <LinkButton  href={project.link} name={"Visiter le site web"} />
-          )}
+        {project.link && (
+          <LinkButton href={project.link} name={"Visiter le site web"} />
+        )}
       </div>
     </div>
   );
