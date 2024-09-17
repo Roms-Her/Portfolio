@@ -16,7 +16,7 @@ function scrollToProjects() {
   return (
     <section className="flex flex-col items-center text-accessible 2xl:py-10">
 
-    <div className="flex p-8 flex-col w-full lg:w-5/6 2xl:w-4/6  md:mb-10 lg:flex-row-reverse lg:mb-14">
+    <div className="flex p-8 mt-20 lg:mt-28 flex-col w-full lg:w-5/6 2xl:w-4/6  md:mb-10 lg:flex-row-reverse lg:mb-14">
         <div className="flex w-40 h-40 bg-roms bg-cover  backdrop-blur-3xl bg-[#d6e0ff40] border rounded-full justify-center mb-8 m-auto shadow-lg md:mb-12 md:w-60 md:h-60 xl:w-80 xl:h-80 ">
         </div>
         <div className="md:pr-8">

@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="m-auto flex items-center justify-between gap-10 w-full p-6 lg:w-5/6 2xl:w-4/6 md:mb-10"
+      className="fixed flex items-center justify-between gap-10 w-full p-2  md:px-4 md:py-4 lg:px-20 xl:px-28 2xl:px-72 2xl:py-6 md:mb-10 backdrop-blur z-50"
     >
       <Link href="/">
         <Image
