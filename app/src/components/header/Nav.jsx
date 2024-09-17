@@ -29,8 +29,10 @@ export default function Nav() {
       >
         <IoMenu className="h-10 w-10" />
       </button>
+
+       {/* mobile menu */}
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-solid p-12 sm:p-20 text-xl transition-all shadow-contrast ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-orange-500 p-12 sm:p-20 text-xl transition-all shadow-contrast ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -46,7 +48,7 @@ export default function Nav() {
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center w-full justify-center transition gap-6 font-bold px-6 py-3 rounded-xl backdrop-blur-xl bg-[#d6e0ff40] shadow-xl"
+                className="flex items-center w-full justify-center transition gap-6 px-4 py-2 rounded-xl backdrop-blur-xl bg-[#d6e0ff40] shadow-xl"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}
@@ -56,12 +58,13 @@ export default function Nav() {
         ))}
       </ul>
 
+      {/* desktop menu */}
       <ul className="hidden xl:flex gap-2">
         {navLinks.map((link, index) => (
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-2 gap-4 hover:text-orange-500 transition font-bold"
+              className="flex items-center py-2 px-2 gap-4 hover:text-orange-500 transition"
             >
               {link.title}
             </Link>
