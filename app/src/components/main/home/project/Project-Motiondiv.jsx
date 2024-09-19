@@ -24,10 +24,10 @@ export default function ProjectMotiondiv({
       className={`flex p-6 backdrop-blur-xl bg-[#d6e0ff40]  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl`}
     >
       <div className="flex flex-col gap-6 items-center justify-between">
-        <h2 className="text-center font-bold text-lg md:text-xl uppercase">
+        <h2 className="text-center font-bold text-lg uppercase">
           {project.name}
         </h2>
-        <p className="text-sm md:text-base text-center">{project.bio}</p>
+        <p className="text-sm text-center">{project.bio}</p>
         <button
           className="bg-solid px-4 py-2 rounded-xl font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
           onClick={() => {

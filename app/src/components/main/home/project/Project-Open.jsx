@@ -1,6 +1,7 @@
-import Image from "next/image";
-import { IoIosCloseCircle } from "react-icons/io";
+// import { IoIosCloseCircle } from "react-icons/io";
+import { IoCloseSharp } from "react-icons/io5";
 import LinkButton from "../../../LinkButton"; // Assuming you have a LinkButton component
+
 export default function ProjectOpen({ project, setModalVisible }) {
   const technosSplit = project.technos.split(", ");
   let technosArray = [];
@@ -9,13 +10,13 @@ export default function ProjectOpen({ project, setModalVisible }) {
   return (
     <div id="modal" className="flex flex-col h-full w-full ">
       <button
-        className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-solid hover:text-orange-500 transition-all"
+        className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-white hover:text-orange-500 transition-all"
         onClick={() => setModalVisible(false)}
       >
-        <IoIosCloseCircle className="text-5xl" />
+        <IoCloseSharp className="text-3xl md:text-5xl" />
       </button>
 
-      <figure className="relative h-2/5 flex rounded-3xl">
+      {/* <figure className="relative h-2/5 flex rounded-3xl">
         <Image
           className="flex w-full rounded-t-3xl object-cover"
           src={project.picture}
@@ -24,7 +25,7 @@ export default function ProjectOpen({ project, setModalVisible }) {
           quality={100}
           alt={project.alt}
         />
-      </figure>
+      </figure> */}
 
       <div className="flex flex-col gap-4 items-center justify-around p-8 overflow-y-auto h-full">
         <h3 className="text-center mb-4 font-bold text-2xl text-accessible">

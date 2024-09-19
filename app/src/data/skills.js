@@ -130,4 +130,38 @@ const softSkills = [
   },
 ];
 
-export { hardSkills, softSkills };
+const ortherSkills = [
+  {
+    description: "Méthodes agiles",
+    doc: "https://fr.wikipedia.org/wiki/M%C3%A9thode_agile",
+  },
+  {
+    description: "Scrum",
+    doc: "https://www.atlassian.com/fr/agile/scrum#:~:text=Scrum%20est%20un%20framework%20de,de%20principes%20et%20de%20pratiques.",
+  },
+  {
+    description: "Kanban",
+    doc: "https://www.atlassian.com/fr/agile/kanban/boards#:~:text=Un%20tableau%20Kanban%20est%20un,ordre%20dans%20leur%20travail%20quotidien.",
+  },
+  {
+    description: "Merise",
+    doc: "https://fr.wikipedia.org/wiki/Merise_(informatique)#:~:text=La%20m%C3%A9thode%20Merise%20est%20une,notamment%20dans%20le%20secteur%20public.",
+  },
+  {
+    description: "User stories",
+    doc: "https://www.atlassian.com/agile/project-management/user-stories#:~:text=A%20user%20story%20is%20the,the%20end%20user%20or%20customer.",
+  },
+  {
+    description: "Maquettage",
+    doc: "https://www.arquen.fr/blog/maquettage-ux-wireframe-maquette-ou-prototype/",
+  },
+  {
+    description: "Shemas d'architecture",
+    doc: "https://www.lucidchart.com/blog/fr/schema-architecture-logicielle",
+  },
+  {
+    description: "Responsive Design",
+    doc: "https://www.seo.fr/definition/responsive-design",
+  },
+];
+export { hardSkills, ortherSkills, softSkills };
