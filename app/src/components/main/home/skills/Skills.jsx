@@ -112,18 +112,18 @@ export default function Skills() {
         >
           <div className="flex flex-col max-w-full flex-wrap justify-center items-center w-full  lg:w-4/5">
             <h3 className="font-bold uppercase text-xl mb-10">Méthodologie</h3>
-            <ul className="flex gap-10 max-w-full flex-wrap justify-center items-center w-3/4">
+            <ul className="flex gap-6 md:gap-10 max-w-full flex-wrap justify-center items-center w-3/4">
               {ortherSkills.map((skill, index) => (
                 <motion.li
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
-                  className="uppercase font-semibold md:text-base"
+                  className="font-semibold"
                   key={index}
                 >
                   <Link
                     href={skill.doc}
                     target="_blank"
-                    className="px-4 py-2 bg-[#eae8ff] text-black hover:text-white hover:bg-orange-500 hover:shadow-lg rounded-lg"
+                    className="px-4 py-2 bg-backgroundLigth text-black hover:text-white hover:bg-orange-500 hover:shadow-lg rounded-lg"
                   >
                     {skill.description}
                   </Link>

@@ -32,7 +32,7 @@ export default function Nav() {
 
        {/* mobile menu */}
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-orange-500 p-12 sm:p-20 text-xl transition-all shadow-contrast ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-solidContrast p-12 sm:p-20 text-xl transition-all shadow-contrast ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -40,7 +40,7 @@ export default function Nav() {
           className="fixed top-8 right-8"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <IoClose className="h-10 w-10 text-newBlack" />
+          <IoClose className="h-10 w-10 text-white" />
         </button>
 
         {navLinks.map((link, index) => (
@@ -48,7 +48,7 @@ export default function Nav() {
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center w-full justify-center transition gap-6 px-4 py-2 rounded-xl backdrop-blur-xl bg-[#d6e0ff40] shadow-xl"
+                className="flex items-center w-full justify-center transition gap-6 px-4 py-2 rounded-lg bg-white shadow-lg"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}

@@ -12,10 +12,6 @@ const navLinks = [
     url: "/#skills",
   },
   {
-    title: "Parcours",
-    url: "/#timeline",
-  },
-  {
     title: "About",
     url: "/#about",
   },

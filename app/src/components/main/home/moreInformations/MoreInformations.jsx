@@ -1,48 +1,59 @@
-"use client"
-import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+"use client";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Link from "next/link";
 
 export default function MoreInformations() {
   return (
     <section
       id="about"
-      className="relative flex items-center justify-center text-newBlack w-full h-full p-10 md:px-16 lg:p-16 mt-10"
+      className="relative flex items-center justify-center text-newBlack w-full h-full p-10 sm:pt-0 md:px-16 lg:px-16 xl:py-10 xl:mt-10 lg:mb-20"
     >
       {/* Uncomment or customize the background shape */}
       {/* <div className="absolute top-0 w-full h-full bg-orange-500 rounded-tl-full"></div> */}
-    <div className='flex flex-col-reverse md:flex-row-reverse 2xl:w-3/4 items-center'>
+      <div className="flex flex-col-reverse xl:flex-row-reverse xl:w-3/4 items-center">
+        <div className="flex flex-col md:text-lg justify-center w-ful md:w-3/4">
+          <h2 className="text-3xl mb-10 uppercase font-semibold">
+            Quelques mots
+          </h2>
 
-      <div className="flex flex-col md:text-lg justify-center w-ful md:w-3/4">
-        <h2 className="text-3xl mb-10 uppercase font-semibold">
-          Quelques mots
-        </h2>
+          <p className="mb-8 text-sm md:text-base text-justify">
+            Passionné par les technologies et la programmation, je me définis volontiers comme un{" "}
+            <span className="font-bold">geek</span>. Après plusieurs années dans
+            divers domaines, j&apos;ai décidé de suivre ma passion pour les{" "}
+            <span className="font-bold">nouvelles technologies</span> en
+            entamant une reconversion professionnelle. Aujourd&apos;hui, je suis{" "}
+            <span className="font-bold">développeur fullstack</span>, capable de
+            travailler à la fois sur le front-end et le back-end. Ma polyvalence
+            est un atout : grâce à mon parcours, je maîtrise aussi bien la
+            gestion de projet que le design, tout en restant profondément ancré
+            dans le développement web.
+          </p>
 
-        <p className="mb-8 text-sm md:text-base text-justify">
-          Ayant effectué une reconversion professionnelle, j&apos;ai enrichi mes compétences grâce à une formation approfondie dans une grande école du{" "}
-          <span className="font-bold">numérique</span>, me spécialisant en tant que{" "}
-          <strong>développeur web et web mobile</strong>. Au cours de cette expérience, j&apos;ai eu l&apos;opportunité de collaborer sur divers projets, ce qui m&apos;a permis d&apos;acquérir une compréhension approfondie des{" "}
-          <span className="font-bold">technologies modernes</span>. Mon parcours professionnel m&apos;a conduit à concevoir et développer des sites web ainsi que des applications dynamiques complètes, mettant ainsi en pratique mes connaissances et démontrant ma capacité à créer des solutions de développement innovantes.
-        </p>
+          <p className="text-justify text-sm md:text-base mb-12">
+            Je suis particulièrement motivé à contribuer à des <span className="font-bold">projets innovants
+            qui allient technologie et créativité</span>, où je peux mettre à profit
+            mon expertise en développement tout en collaborant avec des équipes
+            multidisciplinaires pour atteindre des objectifs ambitieux.
+          </p>
 
-        <p className="text-justify text-sm md:text-base mb-12">
-          Je suis <span className="font-bold">déterminé</span> à poursuivre mon chemin dans le développement en explorant de nouvelles technologies, en participant à des projets ambitieux et en m&apos;engageant dans des initiatives de formation continue. Mon objectif est de{" "}
-          <strong>devenir un développeur web et mobile d&apos;excellence</strong>, capable de fournir des solutions innovantes et efficaces aux défis complexes du monde numérique.
-        </p>
+          <Link
+            className="bg-solid px-4 py-2 rounded-xl w-[60%]  sm:w-[40%] lg:w-[50%] text-center text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
+            href="/pdf/CV.pdf"
+            download="CV_romain-hernandez"
+            target="_blank"
+          >
+            Télécharger le CV
+          </Link>
+        </div>
 
-        <Link
-          className="bg-solid px-4 py-2 rounded-xl w-3/5 text-center text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
-          href="/pdf/CV.pdf"
-          download="CV_romain-hernandez"
-          target="_blank"
-        >
-          Télécharger le CV
-        </Link>
+        <div className="flex sm:w-[100%] lg:w-[80%] xl:w-full justify-center w-full mb-10">
+          <DotLottieReact
+            src="/animation/animation-stack.lottie"
+            loop
+            autoplay
+          />
+        </div>
       </div>
-      
-      <div className="hidden sm:flex sm:w-[80%] justify-center w-full">
-        <DotLottieReact src="/animation/animation-file.lottie" loop autoplay/>
-      </div>
-    </div>
     </section>
   );
 }
