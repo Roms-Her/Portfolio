@@ -32,7 +32,7 @@ export default function Nav() {
 
        {/* mobile menu */}
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-solidContrast p-12 sm:p-20 text-xl transition-all shadow-contrast ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-solidContrast p-12 sm:p-20 text-xl transition-all ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
