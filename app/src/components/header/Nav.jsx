@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="fixed flex items-center justify-between gap-10 w-full p-2  md:px-4 md:py-4 lg:px-20 xl:px-28 2xl:px-72 2xl:py-6 md:mb-10 backdrop-blur z-50"
+      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10 shadow-xl bg-[#fafaff] z-50"
     >
       <Link href="/">
         <Image
@@ -27,7 +27,7 @@ export default function Nav() {
         onClick={() => setMenuOpen(!menuOpen)}
         className="xl:hidden p-2 rounded-m transition-all"
       >
-        <IoMenu className="h-10 w-10" />
+        <IoMenu className="h-10 w-10 text-newBlack" />
       </button>
 
        {/* mobile menu */}
@@ -40,11 +40,11 @@ export default function Nav() {
           className="fixed top-8 right-8"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          <IoClose className="h-10 w-10 text-white" />
+          <IoClose className="h-10 w-10 text-newBlack" />
         </button>
 
         {navLinks.map((link, index) => (
-          <li key={index} className="relative flex flex-col w-full">
+          <li key={index} className="relative flex flex-col w-full text-newBlack">
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
@@ -64,7 +64,7 @@ export default function Nav() {
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="flex items-center py-2 px-2 gap-4 hover:text-orange-500 transition"
+              className="flex items-center py-2 px-2 gap-4 hover:text-orange-500 transition text-newBlack"
             >
               {link.title}
             </Link>

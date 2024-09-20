@@ -8,11 +8,17 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // backgroundColorBlack: "#05077b",
+        // backgroundColorWhite: "#0534b4",
+        // solid: "#0090FF",
+        // accessible: "#f1f4fd",
+        // solidBlack: "#0d1e6d"
         backgroundColorBlack: "#05077b",
         backgroundColorWhite: "#0534b4",
-        solid: "#0090FF",
+        solid: "#6a5fff",
         accessible: "#f1f4fd",
-        solidBlack: "#0d1e6d"
+        solidBlack: "#0d1e6d",
+        newBlack: "#010412"
       },
 
       backgroundImage: {

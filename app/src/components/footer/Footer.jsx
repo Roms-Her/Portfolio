@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   return (
-    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-4 bg-backgroundColorWhite ">
+    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap- ">
       <div className="flex flex-col gap-6">
         <h3 className="font-bold text-lg">Merci pour votre temps.</h3>
         <nav>

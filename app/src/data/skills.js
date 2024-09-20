@@ -132,7 +132,7 @@ const softSkills = [
 
 const ortherSkills = [
   {
-    description: "Méthodes agiles",
+    description: "Agiles",
     doc: "https://fr.wikipedia.org/wiki/M%C3%A9thode_agile",
   },
   {

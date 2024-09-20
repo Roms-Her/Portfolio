@@ -4,7 +4,7 @@ export default function TimeLine() {
   return (
     <section
       id="timeline"
-      className="relative flex flex-col items-center justify-center w-full px-8 pb-10 md:pb-20 text-accessible"
+      className="relative flex flex-col items-center justify-center w-full px-8 pb-10 md:pb-20 text-newBlack"
     >
       <ul className="timeline timeline-snap-icon max-md:timeline-compact w-full timeline-vertical  lg:w-5/6 2xl:w-4/6">
         {worksPath.map((work, index) => (
