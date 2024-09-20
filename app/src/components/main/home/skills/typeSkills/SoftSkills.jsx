@@ -5,7 +5,7 @@ export default function SoftSkills({ skill }) {
     <figure className="flex flex-col items-center justify-center gap-4">
       <Link href={skill.doc} target="_blank">
         <Image
-          className="w-16 h-16 p-4 backdrop-blur-xl bg-accessible hover:bg-orange-500 shadow-xl rounded-3xl"
+          className="w-16 h-16 p-4 backdrop-blur-lg bg-backgroundLigth hover:bg-orange-500 shadow-xl rounded-3xl"
           src={skill.logo}
           alt={skill.alt}
         />

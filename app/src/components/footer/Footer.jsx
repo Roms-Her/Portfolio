@@ -29,7 +29,7 @@ export default function Footer() {
   ];
 
   return (
-    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-4 bg-backgroundColorWhite ">
+    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-10 bg-solid ">
       <div className="flex flex-col gap-6">
         <h3 className="font-bold text-lg">Merci pour votre temps.</h3>
         <nav>
@@ -39,7 +39,7 @@ export default function Footer() {
                 <li key={index} className="flex items-center justify-center">
                   <Link
                     href={item.link}
-                    className="w-8 md:w-12 rounded-xl uppercase tracking-widest font-medium"
+                    className="w-6 md:w-8 rounded-xl uppercase tracking-widest font-medium"
                     target="_blank"
                   >
                     <Image
@@ -55,10 +55,10 @@ export default function Footer() {
           </div>
         </nav>
         <aside>
-          <p className="font-bold text-xs md:text-base">
+          <p className="font-bold text-xs">
             Conçu et créé par <strong>Roms</strong>.
           </p>
-          <p className="text-xs md:text-base">
+          <p className="text-xs">
             Copyright © 2024 - <strong>Roms</strong>
           </p>
         </aside>

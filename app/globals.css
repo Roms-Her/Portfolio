@@ -5,7 +5,8 @@
 body {
   color: #f1f4fd ;
   /* background-color: rgb(5, 7, 123) */
-  background: linear-gradient(100deg, #050740 0%, #1123c3 100%);
+  /* background: linear-gradient(100deg, #fdfdff 0%, #7885ff 100%); */
+  background-color: #fafaff;
 }
 
 .arrow {

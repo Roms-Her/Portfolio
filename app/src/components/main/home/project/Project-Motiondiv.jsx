@@ -21,7 +21,7 @@ export default function ProjectMotiondiv({
         delay: index * 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className={`flex p-6 backdrop-blur-xl bg-[#d6e0ff40]  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 rounded-3xl`}
+      className={`flex p-6 bg-solid justify-center  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 `}
     >
       <div className="flex flex-col gap-6 items-center justify-between">
         <h2 className="text-center font-bold text-lg uppercase">
@@ -29,7 +29,7 @@ export default function ProjectMotiondiv({
         </h2>
         <p className="text-sm text-center">{project.bio}</p>
         <button
-          className="bg-solid px-4 py-2 rounded-xl font-medium text-sm border border-solid hover:bg-orange-500 hover:border-orange-800 hover:shadow-lg transition duration-200"
+          className="bg-white text-newBlack px-4 py-2 rounded-lg font-medium text-sm  hover:bg-orange-500 hover:text-white hover:shadow-lg transition duration-200"
           onClick={() => {
             setModalVisible(true);
             setSelectedProject(project);
