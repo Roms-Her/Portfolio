@@ -12,10 +12,13 @@ module.exports = {
         solidContrast: "#695eff",
         newBlack: "#010412",
         backgroundLigth: "#eae8ff",
+      
       },
 
       backgroundImage: {
         'roms': "url('/roms.png')",
+        'backgroundDegrade': "url('/back/degrade.png')",
+        'backgroundLateralDegrade': "url('/back/lateralDegrade.png')",
       },
       boxShadow: {
         'contrast': '0 -10px 40px 10px rgba(0,0,0,0.20)',

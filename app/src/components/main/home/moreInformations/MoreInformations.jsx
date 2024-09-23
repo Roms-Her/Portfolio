@@ -12,7 +12,7 @@ export default function MoreInformations() {
       {/* <div className="absolute top-0 w-full h-full bg-orange-500 rounded-tl-full"></div> */}
       <div className="flex flex-col-reverse xl:flex-row-reverse xl:w-3/4 items-center">
         <div className="flex flex-col md:text-lg justify-center w-ful md:w-3/4">
-          <h2 className="text-3xl mb-10 uppercase font-semibold">
+          <h2 className="text-3xl mb-10 uppercase font-bold orbitron">
             Quelques mots
           </h2>
 

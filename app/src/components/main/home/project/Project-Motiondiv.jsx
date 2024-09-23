@@ -21,10 +21,10 @@ export default function ProjectMotiondiv({
         delay: index * 0.1,
         ease: [0, 0.71, 0.2, 1.01],
       }}
-      className={`flex p-6 bg-solid justify-center  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 `}
+      className={`flex p-6 bg-backgroundDegrade bg-center justify-center  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 `}
     >
       <div className="flex flex-col gap-6 items-center justify-between">
-        <h2 className="text-center font-bold text-lg uppercase">
+        <h2 className="text-center font-bold text-lg uppercase orbitron">
           {project.name}
         </h2>
         <p className="text-sm text-center">{project.bio}</p>

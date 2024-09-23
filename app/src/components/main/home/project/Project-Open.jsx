@@ -28,7 +28,7 @@ export default function ProjectOpen({ project, setModalVisible }) {
       </figure> */}
 
       <div className="flex flex-col gap-4 items-center justify-around p-8 overflow-y-auto h-full">
-        <h3 className="text-center mb-4 font-bold text-2xl text-newBlack">
+        <h3 className="text-center mb-4 font-bold text-2xl text-newBlack orbitron uppercase">
           {project.name}
         </h3>
         <div className="flex flex-col gap-4 sm:w-3/4 text-newBlack text-sm md:text-base">
