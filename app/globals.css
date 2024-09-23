@@ -2,8 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  cursor: none;
+}
+
 body {
-  color: #f1f4fd ;
+  color: #fafaff ;
   /* background-color: rgb(5, 7, 123) */
   /* background: linear-gradient(100deg, #fdfdff 0%, #7885ff 100%); */
   background-color: #fafaff;
@@ -13,6 +17,19 @@ body {
   animation: arrowMouv 2.5s infinite; 
   transition: transform 1.5s;
   cursor: pointer;
+}
+
+.custom-cursor {
+  position: fixed;
+  left: -12px;
+  top: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  border:3px solid #ff7f1d;
+  pointer-events: none;
+  z-index: 9999;
 }
 
 @keyframes arrowMouv {
