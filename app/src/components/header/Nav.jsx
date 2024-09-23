@@ -32,7 +32,7 @@ export default function Nav() {
 
        {/* mobile menu */}
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-solidContrast p-12 sm:p-20 text-xl transition-all ${
+        className={`xl:hidden fixed z-10 flex flex-col justify-center gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-backgroundLateralDegrade bg-center p-12 sm:p-20 text-xl transition-all ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -48,7 +48,7 @@ export default function Nav() {
             <div className="flex items-center gap-5 mb-4 sm:mb-6">
               <Link
                 href={link.url}
-                className="flex items-center w-full justify-center transition gap-6 px-4 py-2 rounded-lg bg-white shadow-lg"
+                className="flex items-center w-full justify-center transition gap-6 px-4 py-2 orbitron text-bold text-white underline underline-offset-8"
                 onClick={() => setMenuOpen(!menuOpen)}
               >
                 {link.title}

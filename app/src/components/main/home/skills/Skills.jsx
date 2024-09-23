@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col p-10 md:p-16 sm:items-center text-newBlack bg-solid gap-10"
+      className="flex flex-col  p-10 md:p-16 sm:items-center text-newBlack bg-backgroundDegrade bg-center gap-10 w-full h-full"
     >
       <div className="flex flex-col md:flex-row gap-10 2xl:w-3/4">
         {/* Hard Skills */}
@@ -45,7 +45,7 @@ export default function Skills() {
           className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[60%] md:p-10 "
         >
           <div className="flex flex-col gap-10 mb-4 w-full items-center">
-            <h2 className="font-bold  uppercase text-xl">Hards Skills</h2>
+            <h2 className="font-bold  uppercase text-xl orbitron">Hards Skills</h2>
             <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-6 lg:w-4/5">
               {hardSkills.map((skill, index) => (
                 <motion.li
@@ -77,7 +77,7 @@ export default function Skills() {
           className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[40%]   md:p-10"
         >
           <div className="flex flex-col gap-10 mb-4 w-full items-center">
-            <h2 className="font-bold uppercase text-xl">Softs Skills</h2>
+            <h2 className="font-bold uppercase text-xl orbitron">Softs Skills</h2>
             <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-6 lg:w-4/5">
               {softSkills.map((skill, index) => (
                 <motion.li
@@ -111,7 +111,7 @@ export default function Skills() {
           className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:p-10"
         >
           <div className="flex flex-col max-w-full flex-wrap justify-center items-center w-full  lg:w-4/5">
-            <h3 className="font-bold uppercase text-xl mb-10">Méthodologie</h3>
+            <h3 className="font-bold uppercase text-xl mb-10 orbitron">Méthodologie</h3>
             <ul className="flex gap-6 md:gap-10 max-w-full flex-wrap justify-center items-center w-3/4">
               {ortherSkills.map((skill, index) => (
                 <motion.li
