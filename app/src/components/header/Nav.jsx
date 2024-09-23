@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10 shadow-xl bg-[#fafaff] z-50"
+      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10  shadow-contrast backdrop-blur-md z-50"
     >
       <Link href="/">
         <Image

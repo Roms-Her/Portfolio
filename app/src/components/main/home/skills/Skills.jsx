@@ -117,7 +117,7 @@ export default function Skills() {
                 <motion.li
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
-                  className="font-semibold"
+                  
                   key={index}
                 >
                   <Link
