@@ -21,7 +21,7 @@ export default function Home() {
     }, []);
   return (
     <>
-       <div id='customCursor' className='custom-cursor'></div>
+       <div id='customCursor' className='custom-cursor hidden md:flex'></div>
 
       <Welcome />
       <Projects />
