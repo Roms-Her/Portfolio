@@ -3,10 +3,10 @@ import { Play } from "next/font/google";
 import "./globals.css";
 import Footer from "./src/components/footer/Footer";
 import Nav from "./src/components/header/Nav";
-const inter = Play({ subsets: ["latin"], weight: "400" });
+const play = Play({ subsets: ["latin"], weight: "400" });
 
 export const metadata = {
-  title: "Roms - Développeur web et web mobile",
+  title: "Roms - Développeur fullstack",
   description:
     "Bienvenue sur mon portfolio. Je suis développeur web et web mobile, je vous invite à découvrir mes projets et mes compétences.",
 };
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
           content="vK9uuYTsLXtSNH-Zqibp-3JGDLxJ4GdrIO8MnzszuOs"
         />
       </head>
-      <body className={inter.className}>
+      <body className={play.className}>
         <GoogleTagManager gtmId="GTM-NBQ4NGNP" />
         <header>
           <Nav />
