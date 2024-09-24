@@ -1,32 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
+import socialIcons from "../../data/socialIcons";
 export default function Footer() {
-  const socialIcons = [
-    {
-      name: "Linkedin",
-      icon: "/sociaux/linkedin.svg",
-      link: "https://www.linkedin.com/in/romain-hernandez-romsher",
-      alt: "Logo Linkedin",
-    },
-    {
-      name: "X",
-      icon: "/sociaux/x.svg",
-      link: "https://twitter.com/dev_roms",
-      alt: "Logo Twitter",
-    },
-    {
-      name: "Github",
-      icon: "/sociaux/github.svg",
-      link: "https://github.com/Roms-Her",
-      alt: "Logo Github",
-    },
-    {
-      name: "mail",
-      icon: "/sociaux/mail.svg",
-      link: "/contact",
-      alt: "Logo mail",
-    },
-  ];
+
 
   return (
     <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-10 bg-backgroundDegrade bg-center ">
