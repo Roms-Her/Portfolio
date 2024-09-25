@@ -17,8 +17,8 @@ module.exports = {
 
       backgroundImage: {
         'roms': "url('/roms.png')",
-        'backgroundDegrade': "url('/back/Degrademin.png')",
-        'backgroundLateralDegrade': "url('/back/lateralDegrademin.png')",
+        'backgroundDegrade': "url('/back/degrade.webp')",
+        'backgroundLateralDegrade': "url('/back/degradeLat.webp')",
       },
       boxShadow: {
         'contrast': '0 -10px 40px 10px rgba(0,0,0,0.20)',
