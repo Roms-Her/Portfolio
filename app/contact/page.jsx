@@ -15,7 +15,7 @@ export default function ContactPage() {
         const y = event.clientY;
   
         // Appliquer la position à l'élément du curseur
-        customCursor.style.transform = `translate(${x}px, ${y}px)`; // Centrer le rond par rapport au curseur
+        customCursor.style.transform = `translate(${x-5}px, ${y-5}px)`; // Centrer le rond par rapport au curseur
     });
     }, []);
   return (
