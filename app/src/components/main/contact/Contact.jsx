@@ -1,7 +1,8 @@
 "use client";
 
+import { Orbitron } from "next/font/google";
 import { useState } from "react";
-
+const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
 export default function Contact() {
   const [formData, setFormData] = useState({
     name: "",
@@ -68,7 +69,7 @@ export default function Contact() {
 
   return (
     <section className="flex flex-col gap-6 mb-12 min-h-lvh justify-center text-newBlack">
-      <h1 className="w-full mt-32 text-center text-3xl font-bold p-4 orbitron">
+      <h1 className={`w-full mt-32 text-center text-3xl font-bold p-4 ${orbitron.className}`}>
         Me contacter
       </h1>
       <div className="mx-auto flex flex-col gap-4 p-6 sm:w-5/6 md:w-4/6 lg:w-3/6 2xl:w-2/6 text-justify">

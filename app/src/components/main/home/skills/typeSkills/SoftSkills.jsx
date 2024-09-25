@@ -8,6 +8,8 @@ export default function SoftSkills({ skill }) {
           className="w-16 h-16 p-4 backdrop-blur-lg bg-backgroundLigth hover:bg-orange-500 shadow-xl rounded-3xl"
           src={skill.logo}
           alt={skill.alt}
+          width={100}
+          height={100}
         />
       </Link>
       <figcaption>{skill.description}</figcaption>

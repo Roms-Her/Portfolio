@@ -10,10 +10,6 @@ body {
   background-color: #fafaff;
 }
 
-.orbitron {
-  font-family: 'Orbitron', sans-serif;
-}
-
 .arrow {
   animation: arrowMouv 2.5s infinite; 
   transition: transform 1.5s;

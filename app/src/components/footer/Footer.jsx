@@ -1,18 +1,20 @@
+import { Orbitron } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import socialIcons from "../../data/socialIcons";
+const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
 export default function Footer() {
 
 
   return (
     <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-10 bg-backgroundDegrade bg-center ">
       <div className="flex flex-col gap-6">
-        <h3 className="font-bold text-lg orbitron">Merci pour votre temps.</h3>
+        <h3 className={`font-bold text-lg ${orbitron.className}`}>Merci pour votre temps.</h3>
         <nav>
           <div className="grid grid-flow-col">
             <ul className="flex gap-4 md:gap-8">
               {socialIcons.map((item, index) => (
-                <li key={index} className="flex items-center justify-center">
+                <li key={index}>
                   <Link
                     href={item.link}
                     className="w-6 md:w-8 rounded-xl uppercase tracking-widest font-medium"
@@ -21,8 +23,8 @@ export default function Footer() {
                     <Image
                       src={item.icon}
                       alt={item.alt}
-                      width={500}
-                      height={500}
+                      width={30}
+                      height={30}
                     />
                   </Link>
                 </li>

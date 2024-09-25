@@ -1,10 +1,10 @@
 import { GoogleTagManager } from "@next/third-parties/google";
-import { Play } from "next/font/google";
+import { Orbitron, Play } from "next/font/google";
 import "./globals.css";
 import Footer from "./src/components/footer/Footer";
 import Nav from "./src/components/header/Nav";
 const play = Play({ subsets: ["latin"], weight: "400" });
-
+const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
 export const metadata = {
   title: "Roms - Développeur fullstack",
   description:
@@ -15,17 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
-          rel="stylesheet"
-        />
 
         <meta
           name="google-site-verification"
           content="vK9uuYTsLXtSNH-Zqibp-3JGDLxJ4GdrIO8MnzszuOs"
         />
       </head>
-      <body className={play.className}>
+      <body className={`${play.className}`}>
         <GoogleTagManager gtmId="GTM-NBQ4NGNP" />
         <header>
           <Nav />

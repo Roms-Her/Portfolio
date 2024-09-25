@@ -1,5 +1,8 @@
 import { motion } from "framer-motion";
+import { Orbitron } from "next/font/google";
 import { useInView } from "react-intersection-observer";
+const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
+
 export default function ProjectMotiondiv({
   project,
   index,
@@ -24,7 +27,7 @@ export default function ProjectMotiondiv({
       className={`flex p-6 bg-backgroundDegrade bg-center justify-center  shadow-xl sm:w-full md:w-2/6 xl:w-3/12 `}
     >
       <div className="flex flex-col gap-6 items-center justify-between">
-        <h2 className="text-center font-bold text-lg uppercase orbitron">
+        <h2 className={`text-center font-bold text-lg uppercase ${orbitron.className}`}>
           {project.name}
         </h2>
         <p className="text-sm text-center">{project.bio}</p>
