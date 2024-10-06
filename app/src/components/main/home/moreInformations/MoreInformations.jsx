@@ -37,7 +37,7 @@ export default function MoreInformations() {
           </p>
 
           <Link
-            className="bg-solid px-4 py-2 rounded-xl w-[60%]  sm:w-[40%] lg:w-[50%] text-center text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
+            className="bg-solid px-4 py-2 rounded-xl text-center text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
             href="/pdf/CV.pdf"
             download="CV_romain-hernandez"
             target="_blank"

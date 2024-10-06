@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoClose, IoMenu } from "react-icons/io5";
-import RomsLogo from "../../../../public/roms.svg";
+import RomsLogo from "../../../../public/roms-logo.svg";
 import navLinks from "../../../src/site/links";
 import socialIcons from "../../data/socialIcons";
 const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
@@ -15,22 +15,22 @@ export default function Nav() {
 
   return (
     <nav
-      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10  shadow-contrast backdrop-blur-md z-50"
+      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10  shadow-contrast bg-backgroundDegrade bg-center z-50"
     >
       <Link href="/">
         <Image
           src={RomsLogo}
           alt="Logo de The House Of Art"
-          width={500}
-          height={500}
-          className="w-auto"
+          width={100}
+          height={100}
+          className="pl-2 w-auto"
         />
       </Link>
       <button
         onClick={() => setMenuOpen(!menuOpen)}
         className="xl:hidden p-2 rounded-m transition-all"
       >
-        <IoMenu className="h-10 w-10 text-newBlack" />
+        <IoMenu className="h-10 w-10 text-white" />
       </button>
 
        {/* mobile menu */}
@@ -65,7 +65,7 @@ export default function Nav() {
           <li key={index} className="flex">
             <Link
               href={icon.link}
-              className="gap-4 text-white"
+              className="gap-4 text-white ${orbitron.className} "
               target="_blank"
             >
               <Image
@@ -86,7 +86,7 @@ export default function Nav() {
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className="py-2 px-2 gap-4 hover:text-orange-500 transition text-newBlack"
+              className={`py-2 px-2 gap-4 hover:text-orange-500 transition text-white ${orbitron.className} hover:underline hover:underline-offset-8`}
             >
               {link.title}
             </Link>
