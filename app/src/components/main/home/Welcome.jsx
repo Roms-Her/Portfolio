@@ -11,7 +11,7 @@ export default function Welcome() {
       <div className="flex p-8 flex-col w-full lg:w-5/6 2xl:w-4/6 mb-16 md:mb-20 lg:flex-row-reverse ">
         <div className="flex w-60   bg-cover    justify-center mb-8 m-auto md:mb-12 md:w-80  2xl:w-96  ">
           <Image
-            src="/animation/test.webp" // Remplace href par src
+            src="/back/test.webp" // Remplace href par src
             alt="Animation"
             width={500} // Largeur
             height={200} // Hauteur
