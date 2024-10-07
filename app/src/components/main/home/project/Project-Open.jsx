@@ -48,6 +48,7 @@ export default function ProjectOpen({ project, setModalVisible }) {
           <LinkButton href={project.link} name={"Visiter le site web"} />
         )}
       </div>
+   
     </div>
   );
 }

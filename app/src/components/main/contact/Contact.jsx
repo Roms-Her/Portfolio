@@ -171,7 +171,7 @@ export default function Contact() {
 
         <button
           type="submit"
-          className="bg-solid w-2/4 px-4 py-2 rounded-lg text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500hover:shadow-lg transition-all ease-out duration-200"
+          className="border border-black w-2/4 px-4 py-2 rounded-lg text-black uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
         >
           Envoyer
         </button>

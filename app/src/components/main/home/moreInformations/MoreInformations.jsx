@@ -1,6 +1,6 @@
 "use client";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import { Orbitron } from "next/font/google";
+import Image from "next/image";
 import Link from "next/link";
 const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
 export default function MoreInformations() {
@@ -37,7 +37,7 @@ export default function MoreInformations() {
           </p>
 
           <Link
-            className="bg-solid px-4 py-2 rounded-xl text-center text-white uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
+            className="px-4 py-2 border border-black rounded-xl text-center text-black uppercase tracking-widest font-medium text-sm hover:bg-orange-500 hover:shadow-lg transition-all ease-out duration-200"
             href="/pdf/CV.pdf"
             download="CV_romain-hernandez"
             target="_blank"
@@ -46,12 +46,15 @@ export default function MoreInformations() {
           </Link>
         </div>
 
-        <div className="flex sm:w-[100%] lg:w-[80%] xl:w-full justify-center w-full mb-10">
-          <DotLottieReact
-            src="/animation/animation-stack.lottie"
-            loop
-            autoplay
-          />
+        <div className="flex sm:w-[100%] lg:w-[80%] xl:w-full justify-center w-full mb-10 sm:p-10">
+      
+          <Image
+            src="/back/Illustration-Roms.png"
+            alt="Animation"
+            width={500}
+            height={200}
+            >
+          </Image>
         </div>
       </div>
     </section>

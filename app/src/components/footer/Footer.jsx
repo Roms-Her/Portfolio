@@ -7,7 +7,7 @@ export default function Footer() {
 
 
   return (
-    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-10 bg-backgroundDegrade bg-center ">
+    <section className="footer relative footer-center w-full m-auto p-10 text-accessible gap-10 bg-backRetroGray bg-center ">
       <div className="flex flex-col gap-6">
         <h3 className={`font-bold text-lg ${orbitron.className}`}>Merci pour votre temps.</h3>
         <nav>

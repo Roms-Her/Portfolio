@@ -15,7 +15,7 @@ export default function Nav() {
 
   return (
     <nav
-      className="fixed flex items-center justify-between h-[9%] gap-10 w-full px-2  md:px-4  lg:px-20 xl:px-28 2xl:px-72 md:mb-10  shadow-contrast bg-backgroundDegrade bg-center z-50"
+      className="flex items-center justify-between gap-10 w-full lg:w-5/6 2xl:w-4/6 m-auto  p-2   md:p-4  md:mb-10 text-newBlack bg-[#fefff3] bg-center"
     >
       <Link href="/">
         <Image
@@ -30,12 +30,12 @@ export default function Nav() {
         onClick={() => setMenuOpen(!menuOpen)}
         className="xl:hidden p-2 rounded-m transition-all"
       >
-        <IoMenu className="h-10 w-10 text-white" />
+        <IoMenu className="h-10 w-10 text-newBlack" />
       </button>
 
        {/* mobile menu */}
       <ul
-        className={`xl:hidden fixed z-10 flex flex-col justify-center  gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-backgroundLateralDegrade bg-center p-12 sm:p-20 text-xl transition-all ${
+        className={`xl:hidden fixed z-20 flex flex-col justify-center  gap-4 sm:gap-8 h-lvh top-0 right-0 w-4/6 md:w-2/6 bg-orange-500 bg-center p-12 sm:p-20 text-xl transition-all ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -86,7 +86,7 @@ export default function Nav() {
           <li key={index} className="relative flex items-center">
             <Link
               href={link.url}
-              className={`py-2 px-2 gap-4 hover:text-orange-500 transition text-white ${orbitron.className} hover:underline hover:underline-offset-8`}
+              className={`py-2 px-2 gap-4 hover:text-orange-500 transition text-newBlack ${orbitron.className} hover:underline hover:underline-offset-8`}
             >
               {link.title}
             </Link>

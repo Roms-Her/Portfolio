@@ -3,25 +3,24 @@ import MoreInformations from "./src/components/main/home/moreInformations/MoreIn
 import Projects from "./src/components/main/home/project/Project";
 import Skills from "./src/components/main/home/skills/Skills";
 // import TimeLine from "./src/components/main/home/timeline/TimeLine";
-import { useEffect } from 'react';
 import Welcome from "./src/components/main/home/Welcome";
 export default function Home() {
-  useEffect(() => {
-    const customCursor = document.getElementById('customCursor');
+  // useEffect(() => {
+  //   const customCursor = document.getElementById('customCursor');
     
     
-    // Mettre à jour la position du curseur lors du déplacement de la souris
-    document.addEventListener('mousemove', (event) => {
-        const x = event.clientX;
-        const y = event.clientY;
+  //   // Mettre à jour la position du curseur lors du déplacement de la souris
+  //   document.addEventListener('mousemove', (event) => {
+  //       const x = event.clientX;
+  //       const y = event.clientY;
   
-        // Appliquer la position à l'élément du curseur
-        customCursor.style.transform = `translate(${x-5}px, ${y-5}px)`; // Centrer le rond par rapport au curseur
-    });
-    }, []);
+  //       // Appliquer la position à l'élément du curseur
+  //       customCursor.style.transform = `translate(${x-5}px, ${y-5}px)`; // Centrer le rond par rapport au curseur
+  //   });
+  //   }, []);
   return (
     <>
-       <div id='customCursor' className='custom-cursor hidden md:flex'></div>
+       {/* <div id='customCursor' className='custom-cursor hidden md:flex'></div> */}
 
       <Welcome />
       <Projects />

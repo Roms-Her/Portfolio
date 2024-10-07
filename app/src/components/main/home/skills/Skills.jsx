@@ -14,11 +14,11 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col  p-10 md:p-16 sm:items-center text-newBlack bg-backgroundDegrade bg-center gap-10 w-full h-full"
+      className="flex flex-col  p-10 md:p-16 mb-16 md:mb-20 sm:items-center text-newBlack bg-backRetroGray bg-center gap-10 w-full h-full"
     >
       <div className="flex flex-col md:flex-row gap-10 2xl:w-3/4">
         {/* Hard Skills */}
-        <div className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[60%] md:p-10 ">
+        <div className="bg-[#fefff3] shadow-xl flex flex-col p-4 items-center w-full md:w-[60%] md:p-10 border border-black">
           <div className="flex flex-col gap-10 mb-4 w-full items-center h-full ">
             <h2
               className={`flex font-bold text-center  uppercase text-xl ${orbitron.className}`}
@@ -31,6 +31,7 @@ export default function Skills() {
                   whileHover={{ scale: 1.2 }}
                   whileTap={{ scale: 0.8 }}
                   className="uppercase font-semibold md:text-base"
+
                   key={index}
                 >
                   <HardSkills skill={skill} />
@@ -41,7 +42,7 @@ export default function Skills() {
         </div>
 
         {/* Soft Skills */}
-        <div className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[40%]   md:p-10">
+        <div className="bg-[#fefff3] shadow-xl flex flex-col p-4 items-center w-full md:w-[40%]   md:p-10 border border-black">
           <div className="flex flex-col gap-10 mb-4 w-full items-center">
             <h2 className={` text-center font-bold uppercase text-xl ${orbitron.className}`}>
               Softs Skills
@@ -63,8 +64,8 @@ export default function Skills() {
       </div>
 
       {/* methodologies  */}
-      <div className="w-full 2xl:w-3/4">
-        <div className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:p-10">
+      <div className="w-full 2xl:w-3/4 border border-black">
+        <div className="bg-[#fefff3] shadow-xl flex flex-col p-4 items-center w-full md:p-10">
           <div className="flex flex-col max-w-full flex-wrap justify-center items-center w-full  lg:w-4/5">
             <h3
               className={`font-bold uppercase text-xl mb-10 ${orbitron.className}`}
