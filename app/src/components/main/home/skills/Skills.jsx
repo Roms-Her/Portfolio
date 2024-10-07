@@ -14,7 +14,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex flex-col  p-10 md:p-16 mb-16 md:mb-20 sm:items-center text-newBlack bg-backRetroGray bg-center gap-10 w-full h-full"
+      className="flex flex-col  p-10 md:p-16 mb-16 md:mb-20 justify-center sm:items-center text-newBlack bg-backRetroGray bg-center gap-10 w-full min-h-lvh"
     >
       <div className="flex flex-col md:flex-row gap-10 2xl:w-3/4">
         {/* Hard Skills */}

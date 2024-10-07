@@ -7,7 +7,7 @@ export default function MoreInformations() {
   return (
     <section
       id="about"
-      className="relative flex items-center justify-center text-newBlack w-full h-full p-10 sm:pt-0 md:px-16 lg:px-16 xl:py-10 xl:mt-10 lg:mb-20"
+      className="relative flex items-center justify-center text-newBlack w-full h-full p-10 sm:pt-0 md:px-16 lg:px-16 xl:py-10 xl:mt-10 lg:mb-20 min-h-lvh"
     >
   
       <div className="flex flex-col-reverse xl:flex-row-reverse xl:w-3/4 items-center">
