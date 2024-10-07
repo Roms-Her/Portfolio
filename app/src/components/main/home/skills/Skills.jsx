@@ -19,13 +19,13 @@ export default function Skills() {
       <div className="flex flex-col md:flex-row gap-10 2xl:w-3/4">
         {/* Hard Skills */}
         <div className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[60%] md:p-10 ">
-          <div className="flex flex-col gap-10 mb-4 w-full items-center">
+          <div className="flex flex-col gap-10 mb-4 w-full items-center h-full ">
             <h2
-              className={`font-bold  uppercase text-xl ${orbitron.className}`}
+              className={`flex font-bold text-center  uppercase text-xl ${orbitron.className}`}
             >
               Hards Skills
             </h2>
-            <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-6 lg:w-4/5">
+            <ul className="flex h-full gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-6 lg:w-4/5">
               {hardSkills.map((skill, index) => (
                 <motion.li
                   whileHover={{ scale: 1.2 }}
@@ -43,7 +43,7 @@ export default function Skills() {
         {/* Soft Skills */}
         <div className="bg-white shadow-xl flex flex-col p-4 items-center w-full md:w-[40%]   md:p-10">
           <div className="flex flex-col gap-10 mb-4 w-full items-center">
-            <h2 className={`font-bold uppercase text-xl ${orbitron.className}`}>
+            <h2 className={` text-center font-bold uppercase text-xl ${orbitron.className}`}>
               Softs Skills
             </h2>
             <ul className="flex gap-4 max-w-full flex-wrap justify-center items-center w-full md:gap-6 lg:w-4/5">

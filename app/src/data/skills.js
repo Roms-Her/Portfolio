@@ -3,33 +3,33 @@ import logoEmpathy from "../../../public/softskills/empathy.svg";
 import logoCreatif from "../../../public/softskills/paintbrush.svg";
 import logoPassion from "../../../public/softskills/passionate.svg";
 import logoCoworking from "../../../public/softskills/team.svg";
-import logoCss from "../../../public/technos/css-black.svg";
+// import logoCss from "../../../public/technos/css-black.svg";
 import logoExpressJs from "../../../public/technos/express.svg";
 import logoGit from "../../../public/technos/git-black.svg";
 import logoGithub from "../../../public/technos/github.svg";
-import logoHtml from "../../../public/technos/html-black.svg";
+// import logoHtml from "../../../public/technos/html-black.svg";
 import logoJavascript from "../../../public/technos/javascript-black.svg";
 import logoNextJs from "../../../public/technos/next.svg";
 import logoNodeJs from "../../../public/technos/node-black.svg";
 import logoPostgresql from "../../../public/technos/postgresql-black.svg";
 import logoPrisma from "../../../public/technos/prisma-black.svg";
 import logoReact from "../../../public/technos/react-black.svg";
-import logoSequelize from "../../../public/technos/sequelize-black.svg";
-import logoSqitch from "../../../public/technos/sqitch-black.svg";
+// import logoSequelize from "../../../public/technos/sequelize-black.svg";
+// import logoSqitch from "../../../public/technos/sqitch-black.svg";
 import logoTailwindCss from "../../../public/technos/tailwind-black.svg";
 import logoTypescript from "../../../public/technos/typescript-black.svg";
 
 const hardSkills = [
-  {
-    logo: logoHtml,
-    alt: "logo HTML",
-    doc: "https://developer.mozilla.org/fr/docs/Web/HTML",
-  },
-  {
-    logo: logoCss,
-    alt: "logo CSS",
-    doc: "https://developer.mozilla.org/fr/docs/Web/CSS",
-  },
+  // {
+  //   logo: logoHtml,
+  //   alt: "logo HTML",
+  //   doc: "https://developer.mozilla.org/fr/docs/Web/HTML",
+  // },
+  // {
+  //   logo: logoCss,
+  //   alt: "logo CSS",
+  //   doc: "https://developer.mozilla.org/fr/docs/Web/CSS",
+  // },
   {
     logo: logoJavascript,
     alt: "logo Javascript",
@@ -65,11 +65,11 @@ const hardSkills = [
     alt: "logo Express JS",
     doc: "https://expressjs.com",
   },
-  {
-    logo: logoSequelize,
-    alt: "logo Sequelize",
-    doc: "https://sequelize.org/",
-  },
+  // {
+  //   logo: logoSequelize,
+  //   alt: "logo Sequelize",
+  //   doc: "https://sequelize.org/",
+  // },
   {
     logo: logoPrisma,
     alt: "logo Prisma",
@@ -80,11 +80,11 @@ const hardSkills = [
     alt: "logo Postgres sql",
     doc: "https://www.postgresql.org/",
   },
-  {
-    logo: logoSqitch,
-    alt: "logo Sqitch",
-    doc: "https://sqitch.org/",
-  },
+  // {
+  //   logo: logoSqitch,
+  //   alt: "logo Sqitch",
+  //   doc: "https://sqitch.org/",
+  // },
   {
     logo: logoGit,
     alt: "logo Git",
