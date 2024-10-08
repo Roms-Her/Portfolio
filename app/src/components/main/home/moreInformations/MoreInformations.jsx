@@ -17,7 +17,7 @@ export default function MoreInformations() {
           </h2>
 
           <p className="mb-8 text-sm md:text-base text-justify">
-            Passionné par les technologies et la programmation, je me définis volontiers comme un{" "}
+          Mon prénom est Romain, mais mon nom de dev est DotRoms, d&apos;où le &quot;.R&quot;. Passionné par les technologies et la programmation, je me définis volontiers comme un{" "}
             <span className="font-bold">geek</span>. Après plusieurs années dans
             divers domaines, j&apos;ai décidé de suivre ma passion pour les{" "}
             <span className="font-bold">nouvelles technologies</span> en
