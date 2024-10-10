@@ -1,17 +1,18 @@
 "use client";
-import Image from "next/image";
-import { useState } from "react";
-import projects from "../../../../../src/data/projects";
+import projects from "../../../../../data/projects";
+import { LineArt } from "../../../../UI/Icon";
 import ProjectMotiondiv from "./Project-Motiondiv";
 import ProjectOpen from "./Project-Open";
-export default function Project() {
-  const [modalVisible, setModalVisible] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(null);
-
+export default function Index({
+  modalVisible,
+  setModalVisible,
+  selectedProject,
+  setSelectedProject,
+}) {
   return (
     <section
       id="project-page"
-      className="flex flex-col items-center gap-10 justify-center px-8 text-white"
+      className="relative flex flex-col items-center gap-10 justify-center px-8 text-white min-h-lvh"
     >
       <div className="relative z-10 flex flex-col  flex-wrap gap-14 lg:w-5/6 2xl:w-4/6 sm:flex-row justify-center mb-10">
         {projects.map((project, index) => (
@@ -38,10 +39,8 @@ export default function Project() {
         )}
       </div>
 
-      <div className="m-auto">
-        <Image src="/back/line.png" width={600} height={600} alt="dessin" >
-
-        </Image>
+      <div className="xl:absolute xl:bottom-0 m-auto">
+        <LineArt />
       </div>
     </section>
   );

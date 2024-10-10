@@ -1,7 +1,7 @@
 // import { IoIosCloseCircle } from "react-icons/io";
 import { Orbitron } from "next/font/google"; // Assuming you have a Orbitron font
-import { IoCloseSharp } from "react-icons/io5";
-import LinkButton from "../../../LinkButton"; // Assuming you have a LinkButton component
+// import { IoCloseSharp } from "react-icons/io5";
+import { CloseIcon, GithubIconLinks, ProjectLink } from "../../../../UI/Icon"; // Assuming you have a CloseIcon component
 const orbitron = Orbitron({ subsets: ["latin"], weight: "400" });
 
 export default function ProjectOpen({ project, setModalVisible }) {
@@ -11,15 +11,15 @@ export default function ProjectOpen({ project, setModalVisible }) {
 
   return (
     <div id="modal" className="flex flex-col h-full w-full ">
-      <button
-        className="absolute z-50 flex justify-center w-10 top-4 right-4 cursor-pointer text-newBlack hover:text-orange-500 transition-all"
+      <CloseIcon
+        size={40}
+        color={"#000"}
         onClick={() => setModalVisible(false)}
-      >
-        <IoCloseSharp className="text-3xl md:text-5xl" />
-      </button>
-
+      />
       <div className="flex flex-col gap-4 items-center justify-around p-8 overflow-y-auto h-full">
-        <h3 className={`text-center mb-4 font-bold text-2xl text-newBlack ${orbitron.className} uppercase`}>
+        <h3
+          className={`text-center mb-4 font-bold text-2xl text-newBlack ${orbitron.className} uppercase`}
+        >
           {project.name}
         </h3>
         <div className="flex flex-col gap-4 sm:w-3/4 text-newBlack text-sm md:text-base">
@@ -44,11 +44,11 @@ export default function ProjectOpen({ project, setModalVisible }) {
             ))}
           </p>
         </div>
-        {project.link && (
-          <LinkButton href={project.link} name={"Visiter le site web"} />
-        )}
+        <div className="flex gap-6">
+        {project.link && <ProjectLink href={project.link} />}
+        {project.github && <GithubIconLinks href={project.github} />}
+        </div>
       </div>
-   
     </div>
   );
 }

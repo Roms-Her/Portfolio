@@ -15,7 +15,9 @@ module.exports = {
         backgroundAll: "#f9f9f9",
         
       },
-      
+      minHeight: {
+        'home': 'calc(100vh - 80px)',  // Définir une classe personnalisée
+      },
       backgroundImage: {
         'roms': "url('/roms.png')",
         'backRetroGray': "url('/back/degrade.png')",

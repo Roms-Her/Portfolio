@@ -1,5 +1,5 @@
 "use client"
-import Contact from "../src/components/main/contact/Contact";
+import Contact from "../src/components/main/contact/rendering/Index";
 
 
 
